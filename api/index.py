@@ -146,6 +146,7 @@ HTML = """<!DOCTYPE html>
     }
 
     let koOn = false;
+    let pronunOn = false;
     let currentLang = 'en';
     const LANG_VOICE = {
       en:'en-US', ja:'ja-JP', zh:'zh-CN', es:'es-ES', fr:'fr-FR', de:'de-DE'
@@ -155,6 +156,11 @@ HTML = """<!DOCTYPE html>
       koOn = !koOn;
       document.querySelectorAll('.ko').forEach(el => el.style.visibility = koOn ? '' : 'hidden');
       document.getElementById('ko-btn').textContent = koOn ? '한국어 숨기기' : '한국어 보이기';
+    }
+    function togglePronun() {
+      pronunOn = !pronunOn;
+      document.querySelectorAll('.pronun').forEach(el => el.style.visibility = pronunOn ? '' : 'hidden');
+      document.getElementById('pronun-btn').textContent = pronunOn ? '발음 숨기기' : '발음 보이기';
     }
 
     function speak(text, idx) {
@@ -211,11 +217,12 @@ HTML = """<!DOCTYPE html>
           </div>`;
         if (l.reading) h += `<div class="reading">${l.reading}</div>`;
         h += `<div class="ko" style="visibility:hidden">${l.ko}</div>`;
-        if (l.pronun) h += `<div class="reading" style="color:#b0a0ff">${l.pronun}</div>`;
+        if (l.pronun) h += `<div class="reading pronun" style="color:#b0a0ff;visibility:hidden">${l.pronun}</div>`;
         h += `</div>`;
       });
       h += '</div><div class="bottom">';
       h += `<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 보이기</button>`;
+      h += `<button class="bottom-btn" id="pronun-btn" onclick="togglePronun()">발음 보이기</button>`;
       h += `<button class="bottom-btn" onclick="playAll()">▶ 전체 듣기</button>`;
       h += `<button class="bottom-btn dark" onclick="generate()">다시 생성</button></div>`;
       document.getElementById('output').innerHTML = h;
