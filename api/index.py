@@ -259,7 +259,7 @@ Requirements:
 - Respond ONLY with a JSON object, no markdown, no explanation
 - Format: {{"type":"word","items":[{{"word":"...","reading":"...","ko":"...","pronun":"...","example":"..."}}]}}
 - ko: Korean meaning (1-3 words)
-- pronun: Korean phonetic pronunciation (e.g. 굿모닝, 아리가토)
+- pronun: Korean phonetic transcription of how the {lang_name} word SOUNDS (not a translation). e.g. Japanese "ありがとう" → "아리가토우", French "merci" → "메르시"
 - example: one short sentence in {lang_name} only"""
     else:
         prompt = f"""Create a short {lang_name} shadowing script for a Korean adult learner.
@@ -274,7 +274,7 @@ Requirements:
 - Respond ONLY with a JSON object, no markdown, no explanation
 - Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"...","pronun":"..."}}]}}
 - ko: natural Korean translation
-- pronun: Korean phonetic pronunciation of the sentence (e.g. 굿모닝, 아이 러브 유)"""
+- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not a translation). Write how a Korean would read the foreign sounds. e.g. French "Bonjour" → "봉주르", Spanish "Buenos días" → "부에노스 디아스\""""
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_KEY}"
 
