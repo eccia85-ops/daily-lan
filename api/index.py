@@ -146,21 +146,75 @@ HTML = """<!DOCTYPE html>
     }
 
     let koOn = true;
+    let currentLang = 'en';
+    const LANG_VOICE = {
+      en:'en-US', ja:'ja-JP', zh:'zh-CN', es:'es-ES', fr:'fr-FR', de:'de-DE'
+    };
+
     function toggleKo() {
       koOn = !koOn;
       document.querySelectorAll('.ko').forEach(el => el.style.visibility = koOn ? '' : 'hidden');
       document.getElementById('ko-btn').textContent = koOn ? '한국어 숨기기' : '한국어 보이기';
     }
 
+    function speak(text, idx) {
+      window.speechSynthesis.cancel();
+      const utt = new SpeechSynthesisUtterance(text);
+      utt.lang = LANG_VOICE[currentLang] || 'en-US';
+      utt.rate = 0.9;
+      window.speechSynthesis.speak(utt);
+    }
+
+    let playIndex = 0;
+    let playLines = [];
+    function playAll() {
+      window.speechSynthesis.cancel();
+      playIndex = 0;
+      playNext();
+    }
+    function playNext() {
+      if (playIndex >= playLines.length) return;
+      const utt = new SpeechSynthesisUtterance(playLines[playIndex]);
+      utt.lang = LANG_VOICE[currentLang] || 'en-US';
+      utt.rate = 0.9;
+      utt.onend = () => { playIndex++; setTimeout(playNext, 400); };
+      window.speechSynthesis.speak(utt);
+    }
+
+    async function generate() {
+      const btn = document.getElementById('gen-btn');
+      const out = document.getElementById('output');
+      btn.disabled = true;
+      out.innerHTML = '<div class="loading">생성 중...</div>';
+      currentLang = lang;
+      try {
+        const res = await fetch(`/api/script?lang=${lang}&level=${level}&topic=${topic}`);
+        const data = await res.json();
+        if (data.error) { out.innerHTML = `<div class="error">오류: ${data.error}</div>`; }
+        else if (data.type === 'word') renderWords(data.items);
+        else renderScript(data.lines);
+      } catch(e) {
+        out.innerHTML = '<div class="error">네트워크 오류. 다시 시도해주세요.</div>';
+      }
+      btn.disabled = false;
+    }
+
     function renderScript(lines) {
+      playLines = lines.map(l => l.text);
       let h = '<div class="script-card">';
-      lines.forEach(l => {
-        h += `<div class="line"><span class="spk ${l.speaker.toLowerCase()}">${l.speaker}</span><span class="main-text">${l.text}</span>`;
+      lines.forEach((l, i) => {
+        h += `<div class="line">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="spk ${l.speaker.toLowerCase()}">${l.speaker}</span>
+            <span class="main-text">${l.text}</span>
+            <button onclick="speak('${l.text.replace(/'/g,"\\'")}',${i})" style="margin-left:auto;background:none;border:none;cursor:pointer;font-size:16px;">🔊</button>
+          </div>`;
         if (l.reading) h += `<div class="reading">${l.reading}</div>`;
         h += `<div class="ko">${l.ko}</div></div>`;
       });
       h += '</div><div class="bottom">';
       h += `<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 숨기기</button>`;
+      h += `<button class="bottom-btn" onclick="playAll()">▶ 전체 듣기</button>`;
       h += `<button class="bottom-btn dark" onclick="generate()">다시 생성</button></div>`;
       document.getElementById('output').innerHTML = h;
     }
