@@ -314,9 +314,9 @@ Requirements:
 - Respond ONLY with a JSON object, no markdown, no explanation
 - Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"...","pronun":"..."}}]}}
 - ko: natural Korean translation (REQUIRED)
-- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not a translation). e.g. French "Bonjour" → "봉주르", Spanish "Buenos días" → "부에노스 디아스" (REQUIRED)
+- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not a translation). e.g. French "Bonjour" → "봉주르", Spanish "Buenos días" → "부에노스 디아스" (REQUIRED)"""
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_KEY}"
+    url = f"https://generativelanguage.googleapis.com
 
     try:
         async with httpx.AsyncClient(timeout=30) as client:
