@@ -145,7 +145,7 @@ HTML = """<!DOCTYPE html>
       btn.disabled = false;
     }
 
-    let koOn = true;
+    let koOn = false;
     let currentLang = 'en';
     const LANG_VOICE = {
       en:'en-US', ja:'ja-JP', zh:'zh-CN', es:'es-ES', fr:'fr-FR', de:'de-DE'
@@ -210,10 +210,12 @@ HTML = """<!DOCTYPE html>
             <button onclick="speak('${l.text.replace(/'/g,"\\'")}',${i})" style="margin-left:auto;background:none;border:none;cursor:pointer;font-size:16px;">🔊</button>
           </div>`;
         if (l.reading) h += `<div class="reading">${l.reading}</div>`;
-        h += `<div class="ko">${l.ko}</div></div>`;
+        h += `<div class="ko" style="visibility:hidden">${l.ko}</div>`;
+        if (l.pronun) h += `<div class="reading" style="color:#b0a0ff">${l.pronun}</div>`;
+        h += `</div>`;
       });
       h += '</div><div class="bottom">';
-      h += `<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 숨기기</button>`;
+      h += `<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 보이기</button>`;
       h += `<button class="bottom-btn" onclick="playAll()">▶ 전체 듣기</button>`;
       h += `<button class="bottom-btn dark" onclick="generate()">다시 생성</button></div>`;
       document.getElementById('output').innerHTML = h;
@@ -224,7 +226,8 @@ HTML = """<!DOCTYPE html>
       items.forEach(w => {
         h += `<div class="word-item"><div class="word">${w.word}</div>`;
         if (w.reading) h += `<div class="word-reading">${w.reading}</div>`;
-        h += `<div class="word-ko">${w.ko}</div>`;
+        h += `<div class="word-ko" style="visibility:hidden">${w.ko}</div>`;
+        if (w.pronun) h += `<div class="word-reading" style="color:#b0a0ff">${w.pronun}</div>`;
         if (w.example) h += `<div class="word-ex">${w.example}</div>`;
         h += `</div>`;
       });
@@ -254,8 +257,9 @@ Requirements:
 - For Chinese: include pinyin in reading field
 - For others: set reading to empty string
 - Respond ONLY with a JSON object, no markdown, no explanation
-- Format: {{"type":"word","items":[{{"word":"...","reading":"...","ko":"...","example":"..."}}]}}
+- Format: {{"type":"word","items":[{{"word":"...","reading":"...","ko":"...","pronun":"...","example":"..."}}]}}
 - ko: Korean meaning (1-3 words)
+- pronun: Korean phonetic pronunciation (e.g. 굿모닝, 아리가토)
 - example: one short sentence in {lang_name} only"""
     else:
         prompt = f"""Create a short {lang_name} shadowing script for a Korean adult learner.
@@ -268,8 +272,9 @@ Requirements:
 - For Chinese: include pinyin in reading field
 - For others: set reading to empty string
 - Respond ONLY with a JSON object, no markdown, no explanation
-- Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"..."}}]}}
-- ko: natural Korean translation"""
+- Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"...","pronun":"..."}}]}}
+- ko: natural Korean translation
+- pronun: Korean phonetic pronunciation of the sentence (e.g. 굿모닝, 아이 러브 유)"""
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_KEY}"
 
