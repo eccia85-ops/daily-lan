@@ -65,8 +65,8 @@ HTML = """<!DOCTYPE html>
     .word-reading{font-size:14px;color:#888;margin-top:2px}
     .word-ko{font-size:14px;color:#555;margin-top:4px}
     .word-ex{font-size:13px;color:#aaa;margin-top:6px;font-style:italic}
-    .bottom{display:flex;gap:10px;margin-top:4px}
-    .bottom-btn{flex:1;padding:13px;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;border:1.5px solid #e0e0e0;background:#fff}
+    .bottom{display:flex;gap:8px;margin-top:4px;flex-wrap:wrap}
+    .bottom-btn{flex:1;min-width:calc(50% - 4px);padding:13px;border-radius:12px;font-size:13px;font-weight:500;cursor:pointer;border:1.5px solid #e0e0e0;background:#fff}
     .bottom-btn.dark{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
     .loading{text-align:center;padding:40px;color:#888;background:#fff;border-radius:16px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
     .error{text-align:center;padding:40px;color:#e53e3e;background:#fff;border-radius:16px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
@@ -74,19 +74,19 @@ HTML = """<!DOCTYPE html>
 </head>
 <body>
   <div class="header">
-    <span>🔥</span>
+    <span>&#128293;</span>
     <div class="streak">연속 학습 <span>0</span>일</div>
   </div>
 
   <div class="card">
     <div class="label">언어</div>
     <div class="lang-group" id="lang-group">
-      <button class="btn active" data-val="en">🇺🇸 영어</button>
-      <button class="btn" data-val="ja">🇯🇵 일본어</button>
-      <button class="btn" data-val="zh">🇨🇳 중국어</button>
-      <button class="btn" data-val="es">🇪🇸 스페인어</button>
-      <button class="btn" data-val="fr">🇫🇷 프랑스어</button>
-      <button class="btn" data-val="de">🇩🇪 독일어</button>
+      <button class="btn active" data-val="en">&#127482;&#127480; 영어</button>
+      <button class="btn" data-val="ja">&#127471;&#127477; 일본어</button>
+      <button class="btn" data-val="zh">&#127464;&#127475; 중국어</button>
+      <button class="btn" data-val="es">&#127466;&#127480; 스페인어</button>
+      <button class="btn" data-val="fr">&#127467;&#127479; 프랑스어</button>
+      <button class="btn" data-val="de">&#127465;&#127466; 독일어</button>
     </div>
   </div>
 
@@ -103,10 +103,10 @@ HTML = """<!DOCTYPE html>
   <div class="card">
     <div class="label">주제</div>
     <div class="btn-group" id="topic-group">
-      <button class="btn active" data-val="daily">☀️ 일상</button>
-      <button class="btn" data-val="travel">✈️ 여행</button>
-      <button class="btn" data-val="hobby">🚴 취미</button>
-      <button class="btn" data-val="work">💼 직장</button>
+      <button class="btn active" data-val="daily">&#9728;&#65039; 일상</button>
+      <button class="btn" data-val="travel">&#9992;&#65039; 여행</button>
+      <button class="btn" data-val="hobby">&#128692; 취미</button>
+      <button class="btn" data-val="work">&#128188; 직장</button>
     </div>
   </div>
 
@@ -115,6 +115,11 @@ HTML = """<!DOCTYPE html>
 
   <script>
     let lang='en', level='word', topic='daily';
+    let koOn=false, pronunOn=false, currentLang='en';
+    const cache={};
+    const LANG_VOICE={en:'en-US',ja:'ja-JP',zh:'zh-CN',es:'es-ES',fr:'fr-FR',de:'de-DE'};
+    let playIndex=0, playLines=[];
+
     function setupGroup(id, setter) {
       document.getElementById(id).addEventListener('click', e => {
         const b = e.target.closest('[data-val]');
@@ -129,148 +134,118 @@ HTML = """<!DOCTYPE html>
     setupGroup('topic-group', v => { topic=v; onSelectionChange(); });
 
     function onSelectionChange() {
-      const key = `${lang}_${level}_${topic}`;
-      const out = document.getElementById('output');
-      koOn = false;
-      pronunOn = false;
+      const key = lang+'_'+level+'_'+topic;
+      koOn=false; pronunOn=false;
       if (cache[key]) {
-        currentLang = lang;
-        const data = cache[key];
-        if (data.type === 'word') renderWords(data.items);
+        currentLang=lang;
+        const data=cache[key];
+        if (data.type==='word') renderWords(data.items);
         else renderScript(data.lines);
       } else {
-        out.innerHTML = '';
+        document.getElementById('output').innerHTML='';
       }
     }
-
-    async function generate() {
-      const btn = document.getElementById('gen-btn');
-      const out = document.getElementById('output');
-      btn.disabled = true;
-      out.innerHTML = '<div class="loading">생성 중...</div>';
-      try {
-        const res = await fetch(`/api/script?lang=${lang}&level=${level}&topic=${topic}`);
-        const data = await res.json();
-        if (data.error) { out.innerHTML = `<div class="error">오류: ${data.error}</div>`; }
-        else if (data.type === 'word') renderWords(data.items);
-        else renderScript(data.lines);
-      } catch(e) {
-        out.innerHTML = '<div class="error">네트워크 오류. 다시 시도해주세요.</div>';
-      }
-      btn.disabled = false;
-    }
-
-    let koOn = false;
-    let pronunOn = false;
-    let currentLang = 'en';
-    const cache = {};
-    const LANG_VOICE = {
-      en:'en-US', ja:'ja-JP', zh:'zh-CN', es:'es-ES', fr:'fr-FR', de:'de-DE'
-    };
 
     function toggleKo() {
-      koOn = !koOn;
-      document.querySelectorAll('.ko').forEach(el => el.style.visibility = koOn ? '' : 'hidden');
-      document.getElementById('ko-btn').textContent = koOn ? '한국어 숨기기' : '한국어 보이기';
+      koOn=!koOn;
+      document.querySelectorAll('.ko').forEach(el => el.style.visibility=koOn?'':'hidden');
+      document.getElementById('ko-btn').textContent=koOn?'한국어 숨기기':'한국어 보이기';
     }
     function togglePronun() {
-      pronunOn = !pronunOn;
-      document.querySelectorAll('.pronun').forEach(el => el.style.visibility = pronunOn ? '' : 'hidden');
-      document.getElementById('pronun-btn').textContent = pronunOn ? '발음 숨기기' : '발음 보이기';
+      pronunOn=!pronunOn;
+      document.querySelectorAll('.pronun').forEach(el => el.style.visibility=pronunOn?'':'hidden');
+      document.getElementById('pronun-btn').textContent=pronunOn?'발음 숨기기':'발음 보이기';
     }
-
-    function speak(text, idx) {
+    function speak(text) {
       window.speechSynthesis.cancel();
-      const utt = new SpeechSynthesisUtterance(text);
-      utt.lang = LANG_VOICE[currentLang] || 'en-US';
-      utt.rate = 0.9;
+      const utt=new SpeechSynthesisUtterance(text);
+      utt.lang=LANG_VOICE[currentLang]||'en-US';
+      utt.rate=0.9;
       window.speechSynthesis.speak(utt);
     }
-
-    let playIndex = 0;
-    let playLines = [];
     function playAll() {
       window.speechSynthesis.cancel();
-      playIndex = 0;
-      playNext();
+      playIndex=0; playNext();
     }
     function playNext() {
-      if (playIndex >= playLines.length) return;
-      const utt = new SpeechSynthesisUtterance(playLines[playIndex]);
-      utt.lang = LANG_VOICE[currentLang] || 'en-US';
-      utt.rate = 0.9;
-      utt.onend = () => { playIndex++; setTimeout(playNext, 400); };
+      if (playIndex>=playLines.length) return;
+      const utt=new SpeechSynthesisUtterance(playLines[playIndex]);
+      utt.lang=LANG_VOICE[currentLang]||'en-US';
+      utt.rate=0.9;
+      utt.onend=()=>{ playIndex++; setTimeout(playNext,400); };
       window.speechSynthesis.speak(utt);
     }
 
     async function generate(force=false) {
-      const btn = document.getElementById('gen-btn');
-      const out = document.getElementById('output');
-      const key = `${lang}_${level}_${topic}`;
-      koOn = false;
-      pronunOn = false;
-
+      const btn=document.getElementById('gen-btn');
+      const out=document.getElementById('output');
+      const key=lang+'_'+level+'_'+topic;
+      koOn=false; pronunOn=false;
       if (!force && cache[key]) {
-        currentLang = lang;
-        const data = cache[key];
-        if (data.type === 'word') renderWords(data.items);
+        currentLang=lang;
+        const data=cache[key];
+        if (data.type==='word') renderWords(data.items);
         else renderScript(data.lines);
         return;
       }
-
-      btn.disabled = true;
-      out.innerHTML = '<div class="loading">생성 중...</div>';
-      currentLang = lang;
+      btn.disabled=true;
+      out.innerHTML='<div class="loading">생성 중...</div>';
+      currentLang=lang;
       try {
-        const res = await fetch(`/api/script?lang=${lang}&level=${level}&topic=${topic}`);
-        const data = await res.json();
-        if (data.error) { out.innerHTML = `<div class="error">오류: ${data.error}</div>`; }
+        const res=await fetch('/api/script?lang='+lang+'&level='+level+'&topic='+topic);
+        const data=await res.json();
+        if (data.error) { out.innerHTML='<div class="error">오류: '+data.error+'</div>'; }
         else {
-          cache[key] = data;
-          if (data.type === 'word') renderWords(data.items);
+          cache[key]=data;
+          if (data.type==='word') renderWords(data.items);
           else renderScript(data.lines);
         }
       } catch(e) {
-        out.innerHTML = '<div class="error">네트워크 오류. 다시 시도해주세요.</div>';
+        out.innerHTML='<div class="error">네트워크 오류. 다시 시도해주세요.</div>';
       }
-      btn.disabled = false;
+      btn.disabled=false;
     }
 
     function renderScript(lines) {
-      playLines = lines.map(l => l.text);
-      let h = '<div class="script-card">';
-      lines.forEach((l, i) => {
-        h += `<div class="line">
-          <div style="display:flex;align-items:center;gap:8px">
-            <span class="spk ${l.speaker.toLowerCase()}">${l.speaker}</span>
-            <span class="main-text">${l.text}</span>
-            <button onclick="speak('${l.text.replace(/'/g,"\\'")}',${i})" style="margin-left:auto;background:none;border:none;cursor:pointer;font-size:16px;">🔊</button>
-          </div>`;
-        if (l.reading) h += `<div class="reading">${l.reading}</div>`;
-        h += `<div class="ko" style="visibility:hidden">${l.ko || ''}</div>`;
-        h += `<div class="reading pronun" style="color:#b0a0ff;visibility:hidden">${l.pronun || ''}</div>`;
-        h += `</div>`;
+      playLines=lines.map(l=>l.text);
+      let h='<div class="script-card">';
+      lines.forEach((l,i)=>{
+        const t=l.text.replace(/\\\\/g,'\\\\\\\\').replace(/'/g,"\\\\'");
+        h+='<div class="line"><div style="display:flex;align-items:center;gap:8px">';
+        h+='<span class="spk '+(l.speaker||'A').toLowerCase()+'">'+(l.speaker||'A')+'</span>';
+        h+='<span class="main-text">'+l.text+'</span>';
+        h+='<button onclick="speak(\\'' +t+ '\\')" style="margin-left:auto;background:none;border:none;cursor:pointer;font-size:16px;">&#128266;</button>';
+        h+='</div>';
+        if (l.reading) h+='<div class="reading">'+l.reading+'</div>';
+        h+='<div class="ko" style="visibility:hidden">'+(l.ko||'')+'</div>';
+        h+='<div class="reading pronun" style="color:#b0a0ff;visibility:hidden">'+(l.pronun||'')+'</div>';
+        h+='</div>';
       });
-      h += '</div><div class="bottom">';
-      h += `<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 보이기</button>`;
-      h += `<button class="bottom-btn" id="pronun-btn" onclick="togglePronun()">발음 보이기</button>`;
-      h += `<button class="bottom-btn" onclick="playAll()">▶ 전체 듣기</button>`;
-      h += `<button class="bottom-btn dark" onclick="generate(true)">다시 생성</button></div>`;
-      document.getElementById('output').innerHTML = h;
+      h+='</div><div class="bottom">';
+      h+='<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 보이기</button>';
+      h+='<button class="bottom-btn" id="pronun-btn" onclick="togglePronun()">발음 보이기</button>';
+      h+='<button class="bottom-btn" onclick="playAll()">&#9654; 전체 듣기</button>';
+      h+='<button class="bottom-btn dark" onclick="generate(true)">다시 생성</button>';
+      h+='</div>';
+      document.getElementById('output').innerHTML=h;
     }
 
     function renderWords(items) {
-      let h = '<div class="script-card">';
-      items.forEach(w => {
-        h += `<div class="word-item"><div class="word">${w.word}</div>`;
-        if (w.reading) h += `<div class="word-reading">${w.reading}</div>`;
-        h += `<div class="word-ko" style="visibility:hidden">${w.ko}</div>`;
-        if (w.pronun) h += `<div class="word-reading" style="color:#b0a0ff">${w.pronun}</div>`;
-        if (w.example) h += `<div class="word-ex">${w.example}</div>`;
-        h += `</div>`;
+      let h='<div class="script-card">';
+      items.forEach(w=>{
+        h+='<div class="word-item"><div class="word">'+(w.word||'')+'</div>';
+        if (w.reading) h+='<div class="word-reading">'+w.reading+'</div>';
+        h+='<div class="word-ko" style="visibility:hidden">'+(w.ko||'')+'</div>';
+        h+='<div class="word-reading pronun" style="color:#b0a0ff;visibility:hidden">'+(w.pronun||'')+'</div>';
+        if (w.example) h+='<div class="word-ex">'+w.example+'</div>';
+        h+='</div>';
       });
-      h += `</div><div class="bottom"><button class="bottom-btn dark" onclick="generate(true)">다시 생성</button></div>`;
-      document.getElementById('output').innerHTML = h;
+      h+='</div><div class="bottom">';
+      h+='<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 보이기</button>';
+      h+='<button class="bottom-btn" id="pronun-btn" onclick="togglePronun()">발음 보이기</button>';
+      h+='<button class="bottom-btn dark" onclick="generate(true)">다시 생성</button>';
+      h+='</div>';
+      document.getElementById('output').innerHTML=h;
     }
   </script>
 </body>
@@ -287,36 +262,39 @@ async def get_script(lang: str = "en", level: str = "word", topic: str = "daily"
     topic_desc = TOPIC_MAP.get(topic, TOPIC_MAP["daily"])
 
     if level == "word":
-        prompt = f"""Create a vocabulary list for a Korean adult learner studying {lang_name}.
-Topic: {topic_desc}
-Count: 8 words
-Requirements:
-- For Japanese: include hiragana in reading field
-- For Chinese: include pinyin in reading field
-- For others: set reading to empty string
-- Respond ONLY with a JSON object, no markdown, no explanation
-- Format: {{"type":"word","items":[{{"word":"...","reading":"...","ko":"...","pronun":"...","example":"..."}}]}}
-- ko: Korean meaning (1-3 words)
-- pronun: Korean phonetic transcription of how the {lang_name} word SOUNDS (not a translation). e.g. Japanese "ありがとう" → "아리가토우", French "merci" → "메르시"
-- example: one short sentence in {lang_name} only"""
+        prompt = (
+            f"Create a vocabulary list for a Korean adult learner studying {lang_name}.\n"
+            f"Topic: {topic_desc}\n"
+            f"Count: 8 words\n"
+            f"Requirements:\n"
+            f"- For Japanese: include hiragana in reading field\n"
+            f"- For Chinese: include pinyin in reading field\n"
+            f"- For others: set reading to empty string\n"
+            f"- Respond ONLY with a JSON object, no markdown, no explanation\n"
+            f'- Format: {{"type":"word","items":[{{"word":"...","reading":"...","ko":"...","pronun":"...","example":"..."}}]}}\n'
+            f"- ko: Korean meaning (1-3 words)\n"
+            f"- pronun: Korean phonetic transcription of how the {lang_name} word SOUNDS (not translation). e.g. 'merci' -> '메르시'\n"
+            f"- example: one short sentence in {lang_name} only"
+        )
     else:
-        prompt = f"""Create a short {lang_name} shadowing script for a Korean adult learner.
-Level: {level_desc}
-Topic: {topic_desc}
-Lines: 8 to 10
-Requirements:
-- Natural dialogue between speaker A and speaker B
-- For Japanese: include hiragana in reading field
-- For Chinese: include pinyin in reading field
-- For others: set reading to empty string
-- EVERY line MUST have ALL fields: speaker, text, reading, ko, pronun
-- ko and pronun are REQUIRED even if empty string
-- Respond ONLY with a JSON object, no markdown, no explanation
-- Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"...","pronun":"..."}}]}}
-- ko: natural Korean translation (REQUIRED)
-- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not a translation). e.g. French "Bonjour" → "봉주르", Spanish "Buenos días" → "부에노스 디아스" (REQUIRED)"""
+        prompt = (
+            f"Create a short {lang_name} shadowing script for a Korean adult learner.\n"
+            f"Level: {level_desc}\n"
+            f"Topic: {topic_desc}\n"
+            f"Lines: 8 to 10\n"
+            f"Requirements:\n"
+            f"- Natural dialogue between speaker A and speaker B\n"
+            f"- For Japanese: include hiragana in reading field\n"
+            f"- For Chinese: include pinyin in reading field\n"
+            f"- For others: set reading to empty string\n"
+            f"- EVERY line MUST have ALL fields: speaker, text, reading, ko, pronun\n"
+            f"- Respond ONLY with a JSON object, no markdown, no explanation\n"
+            f'- Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"...","pronun":"..."}}]}}\n'
+            f"- ko: natural Korean translation (REQUIRED)\n"
+            f"- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not translation). e.g. 'Bonjour' -> '봉주르' (REQUIRED)"
+        )
 
-    url = f"https://generativelanguage.googleapis.com
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_KEY}"
 
     try:
         async with httpx.AsyncClient(timeout=30) as client:
