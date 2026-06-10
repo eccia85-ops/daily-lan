@@ -148,6 +148,7 @@ HTML = """<!DOCTYPE html>
     let koOn = false;
     let pronunOn = false;
     let currentLang = 'en';
+    const cache = {};
     const LANG_VOICE = {
       en:'en-US', ja:'ja-JP', zh:'zh-CN', es:'es-ES', fr:'fr-FR', de:'de-DE'
     };
@@ -187,9 +188,21 @@ HTML = """<!DOCTYPE html>
       window.speechSynthesis.speak(utt);
     }
 
-    async function generate() {
+    async function generate(force=false) {
       const btn = document.getElementById('gen-btn');
       const out = document.getElementById('output');
+      const key = `${lang}_${level}_${topic}`;
+      koOn = false;
+      pronunOn = false;
+
+      if (!force && cache[key]) {
+        currentLang = lang;
+        const data = cache[key];
+        if (data.type === 'word') renderWords(data.items);
+        else renderScript(data.lines);
+        return;
+      }
+
       btn.disabled = true;
       out.innerHTML = '<div class="loading">생성 중...</div>';
       currentLang = lang;
@@ -197,8 +210,11 @@ HTML = """<!DOCTYPE html>
         const res = await fetch(`/api/script?lang=${lang}&level=${level}&topic=${topic}`);
         const data = await res.json();
         if (data.error) { out.innerHTML = `<div class="error">오류: ${data.error}</div>`; }
-        else if (data.type === 'word') renderWords(data.items);
-        else renderScript(data.lines);
+        else {
+          cache[key] = data;
+          if (data.type === 'word') renderWords(data.items);
+          else renderScript(data.lines);
+        }
       } catch(e) {
         out.innerHTML = '<div class="error">네트워크 오류. 다시 시도해주세요.</div>';
       }
@@ -224,7 +240,7 @@ HTML = """<!DOCTYPE html>
       h += `<button class="bottom-btn" id="ko-btn" onclick="toggleKo()">한국어 보이기</button>`;
       h += `<button class="bottom-btn" id="pronun-btn" onclick="togglePronun()">발음 보이기</button>`;
       h += `<button class="bottom-btn" onclick="playAll()">▶ 전체 듣기</button>`;
-      h += `<button class="bottom-btn dark" onclick="generate()">다시 생성</button></div>`;
+      h += `<button class="bottom-btn dark" onclick="generate(true)">다시 생성</button></div>`;
       document.getElementById('output').innerHTML = h;
     }
 
@@ -238,7 +254,7 @@ HTML = """<!DOCTYPE html>
         if (w.example) h += `<div class="word-ex">${w.example}</div>`;
         h += `</div>`;
       });
-      h += `</div><div class="bottom"><button class="bottom-btn dark" onclick="generate()">다시 생성</button></div>`;
+      h += `</div><div class="bottom"><button class="bottom-btn dark" onclick="generate(true)">다시 생성</button></div>`;
       document.getElementById('output').innerHTML = h;
     }
   </script>
