@@ -247,8 +247,8 @@ HTML = """<!DOCTYPE html>
             <button onclick="speak('${l.text.replace(/'/g,"\\'")}',${i})" style="margin-left:auto;background:none;border:none;cursor:pointer;font-size:16px;">🔊</button>
           </div>`;
         if (l.reading) h += `<div class="reading">${l.reading}</div>`;
-        h += `<div class="ko" style="visibility:hidden">${l.ko}</div>`;
-        if (l.pronun) h += `<div class="reading pronun" style="color:#b0a0ff;visibility:hidden">${l.pronun}</div>`;
+        h += `<div class="ko" style="visibility:hidden">${l.ko || ''}</div>`;
+        h += `<div class="reading pronun" style="color:#b0a0ff;visibility:hidden">${l.pronun || ''}</div>`;
         h += `</div>`;
       });
       h += '</div><div class="bottom">';
@@ -309,10 +309,12 @@ Requirements:
 - For Japanese: include hiragana in reading field
 - For Chinese: include pinyin in reading field
 - For others: set reading to empty string
+- EVERY line MUST have ALL fields: speaker, text, reading, ko, pronun
+- ko and pronun are REQUIRED even if empty string
 - Respond ONLY with a JSON object, no markdown, no explanation
 - Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"...","pronun":"..."}}]}}
-- ko: natural Korean translation
-- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not a translation). Write how a Korean would read the foreign sounds. e.g. French "Bonjour" → "봉주르", Spanish "Buenos días" → "부에노스 디아스\""""
+- ko: natural Korean translation (REQUIRED)
+- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not a translation). e.g. French "Bonjour" → "봉주르", Spanish "Buenos días" → "부에노스 디아스" (REQUIRED)
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_KEY}"
 
