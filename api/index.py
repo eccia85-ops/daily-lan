@@ -124,9 +124,24 @@ HTML = """<!DOCTYPE html>
         setter(b.dataset.val);
       });
     }
-    setupGroup('lang-group',  v => lang=v);
-    setupGroup('level-group', v => level=v);
-    setupGroup('topic-group', v => topic=v);
+    setupGroup('lang-group',  v => { lang=v;  onSelectionChange(); });
+    setupGroup('level-group', v => { level=v; onSelectionChange(); });
+    setupGroup('topic-group', v => { topic=v; onSelectionChange(); });
+
+    function onSelectionChange() {
+      const key = `${lang}_${level}_${topic}`;
+      const out = document.getElementById('output');
+      koOn = false;
+      pronunOn = false;
+      if (cache[key]) {
+        currentLang = lang;
+        const data = cache[key];
+        if (data.type === 'word') renderWords(data.items);
+        else renderScript(data.lines);
+      } else {
+        out.innerHTML = '';
+      }
+    }
 
     async function generate() {
       const btn = document.getElementById('gen-btn');
