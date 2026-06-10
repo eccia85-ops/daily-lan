@@ -216,7 +216,7 @@ HTML = """<!DOCTYPE html>
         h+='<span class="main-text">'+l.text+'</span>';
         h+='<button onclick="speak(\\'' +t+ '\\')" style="margin-left:auto;background:none;border:none;cursor:pointer;font-size:16px;">&#128266;</button>';
         h+='</div>';
-        if (l.reading) h+='<div class="reading">'+l.reading+'</div>';
+        if (l.reading && (currentLang==='zh' || (currentLang==='ja' && /[\u4e00-\u9faf\u3400-\u4dbf]/.test(l.text)))) h+='<div class="reading">'+l.reading+'</div>';
         h+='<div class="ko" style="visibility:hidden">'+(l.ko||'')+'</div>';
         h+='<div class="reading pronun" style="color:#b0a0ff;visibility:hidden">'+(l.pronun||'')+'</div>';
         h+='</div>';
@@ -234,7 +234,7 @@ HTML = """<!DOCTYPE html>
       let h='<div class="script-card">';
       items.forEach(w=>{
         h+='<div class="word-item"><div class="word">'+(w.word||'')+'</div>';
-        if (w.reading) h+='<div class="word-reading">'+w.reading+'</div>';
+        if (w.reading && (currentLang==='zh' || (currentLang==='ja' && /[\u4e00-\u9faf\u3400-\u4dbf]/.test(w.word)))) h+='<div class="word-reading">'+w.reading+'</div>';
         h+='<div class="word-ko" style="visibility:hidden">'+(w.ko||'')+'</div>';
         h+='<div class="word-reading pronun" style="color:#b0a0ff;visibility:hidden">'+(w.pronun||'')+'</div>';
         if (w.example) h+='<div class="word-ex">'+w.example+'</div>';
