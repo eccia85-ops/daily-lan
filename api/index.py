@@ -192,7 +192,7 @@ HTML = """<!DOCTYPE html>
       out.innerHTML='<div class="loading">생성 중...</div>';
       currentLang=lang;
       try {
-        const res=await fetch('/api/script?lang='+lang+'&level='+level+'&topic='+topic);
+        const res=await fetch('/api/script?lang='+lang+'&level='+level+'&topic='+topic+'&force='+(force?'true':'false'));
         const data=await res.json();
         if (data.error) { out.innerHTML='<div class="error">오류: '+data.error+'</div>'; }
         else {
@@ -255,11 +255,110 @@ HTML = """<!DOCTYPE html>
 async def root():
     return HTML
 
+GITHUB_REPO = os.environ.get("GITHUB_REPO", "eccia85-ops/daily-lan")
+
+async def load_from_github():
+    url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/data/scripts.json"
+    try:
+        async with httpx.AsyncClient(timeout=10) as client:
+            res = await client.get(url)
+            if res.status_code == 200:
+                return res.json()
+    except:
+        pass
+    return {}
+    
 @app.get("/api/script")
-async def get_script(lang: str = "en", level: str = "word", topic: str = "daily"):
+async def get_script(lang: str = "en", level: str = "word", topic: str = "daily", force: str = "false"):
+    key = f"{lang}_{level}_{topic}"
+
+    # force가 아니면 GitHub에서 먼저 불러오기
+    if force != "true":
+        scripts = await load_from_github()
+        if key in scripts:
+            return JSONResponse(scripts[key])
+
     lang_name = LANG_MAP.get(lang, "English")
     level_desc = LEVEL_MAP.get(level, LEVEL_MAP["word"])
     topic_desc = TOPIC_MAP.get(topic, TOPIC_MAP["daily"])
+
+    if level == "word":
+        prompt = (
+            f"Create a vocabulary list for a Korean adult learner studying {lang_name}.\n"
+            f"Topic: {topic_desc}\n"
+            f"Count: 8 words\n"
+            f"Requirements:\n"
+            f"- For Japanese: include hiragana in reading field\n"
+            f"- For Chinese: include pinyin in reading field\n"
+            f"- For others: set reading to empty string\n"
+            f"- Respond ONLY with a JSON object, no markdown, no explanation\n"
+            f'- Format: {{"type":"word","items":[{{"word":"...","reading":"...","ko":"...","pronun":"...","example":"..."}}]}}\n'
+            f"- ko: Korean meaning (1-3 words)\n"
+            f"- pronun: Korean phonetic transcription of how the {lang_name} word SOUNDS (not translation). e.g. 'merci' -> '메르시'\n"
+            f"- example: one short sentence in {lang_name} only"
+        )
+    else:
+        prompt = (
+            f"Create a short {lang_name} shadowing script for a Korean adult learner.\n"
+            f"Level: {level_desc}\n"
+            f"Topic: {topic_desc}\n"
+            f"Lines: 8 to 10\n"
+            f"Requirements:\n"
+            f"- Natural dialogue between speaker A and speaker B\n"
+            f"- For Japanese: include hiragana in reading field\n"
+            f"- For Chinese: include pinyin in reading field\n"
+            f"- For others: set reading to empty string\n"
+            f"- EVERY line MUST have ALL fields: speaker, text, reading, ko, pronun\n"
+            f"- Respond ONLY with a JSON object, no markdown, no explanation\n"
+            f'- Format: {{"type":"script","lines":[{{"speaker":"A","text":"...","reading":"...","ko":"...","pronun":"..."}}]}}\n'
+            f"- ko: natural Korean translation (REQUIRED)\n"
+            f"- pronun: Korean phonetic transcription of how the {lang_name} sentence SOUNDS (not translation). e.g. 'Bonjour' -> '봉주르' (REQUIRED)"
+        )
+
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_KEY}"
+
+    try:
+        async with httpx.AsyncClient(timeout=30) as client:
+            res = await client.post(url, json={
+                "contents": [{"parts": [{"text": prompt}]}]
+            })
+            data = res.json()
+
+        if "candidates" not in data:
+            return JSONResponse({"error": str(data)}, status_code=500)
+
+        raw = data["candidates"][0]["content"]["parts"][0]["text"]
+        clean = raw.replace("```json", "").replace("```", "").strip()
+        result = json.loads(clean)
+
+        # 결과를 GitHub scripts.json에 업데이트
+        try:
+            scripts = await load_from_github()
+            scripts[key] = result
+            import base64
+            from datetime import datetime
+            gh_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data/scripts.json"
+            headers = {
+                "Authorization": f"token {os.environ.get('GITHUB_TOKEN', '')}",
+                "Accept": "application/vnd.github.v3+json"
+            }
+            content = json.dumps(scripts, ensure_ascii=False, indent=2)
+            encoded = base64.b64encode(content.encode()).decode()
+            async with httpx.AsyncClient(timeout=30) as client:
+                res2 = await client.get(gh_url, headers=headers)
+                sha = res2.json().get("sha", "")
+                await client.put(gh_url, headers=headers, json={
+                    "message": f"Update script: {key}",
+                    "content": encoded,
+                    "sha": sha
+                })
+        except:
+            pass
+
+        return JSONResponse(result)
+
+    except Exception as e:
+        return JSONResponse({"error": str(e)}, status_code=500)
 
     if level == "word":
         prompt = (
