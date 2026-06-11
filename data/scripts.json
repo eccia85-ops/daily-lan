@@ -120,5 +120,66 @@
         "pronun": "하이, 이키마쇼-."
       }
     ]
+  },
+  "en_daily_daily": {
+    "type": "script",
+    "lines": [
+      {
+        "speaker": "A",
+        "text": "Good morning! Did you sleep well?",
+        "reading": "",
+        "ko": "좋은 아침이에요! 잘 잤어요?",
+        "pronun": "굿 모닝! 디드 유 슬립 웰?"
+      },
+      {
+        "speaker": "B",
+        "text": "Morning! Yeah, pretty good, thanks. How about you?",
+        "reading": "",
+        "ko": "좋은 아침이에요! 네, 꽤 잘 잤어요, 고마워요. 당신은요?",
+        "pronun": "모닝! 예, 프리리 굿, 땡스. 하우 어바웃 유?"
+      },
+      {
+        "speaker": "A",
+        "text": "I'm doing okay. It's a bit chilly outside today, isn't it?",
+        "reading": "",
+        "ko": "저는 괜찮아요. 오늘 밖이 좀 쌀쌀하네요, 그렇지 않아요?",
+        "pronun": "아임 두잉 오케이. 잇츠 어 비트 칠리 아웃사이드 투데이, 이즌 잇?"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, really? I didn't notice. I'm thinking of grabbing a coffee.",
+        "reading": "",
+        "ko": "오, 정말요? 저는 신경 못 썼어요. 커피 한 잔 사 마실까 생각 중이에요.",
+        "pronun": "오, 릴리? 아이 디든트 노티스. 아임 씽킹 오브 그래빙 어 커피."
+      },
+      {
+        "speaker": "A",
+        "text": "That sounds like a good idea. Can I join you?",
+        "reading": "",
+        "ko": "좋은 생각 같네요. 같이 가도 될까요?",
+        "pronun": "댓 사운즈 라익 어 굿 아이디어. 캔 아이 조인 유?"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course! There's a nice cafe just around the corner.",
+        "reading": "",
+        "ko": "그럼요! 바로 모퉁이만 돌면 괜찮은 카페가 있어요.",
+        "pronun": "옵 코스! 데어즈 어 나이스 카페 저스트 어라운드 더 코너."
+      },
+      {
+        "speaker": "A",
+        "text": "Perfect. I need my morning caffeine fix.",
+        "reading": "",
+        "ko": "완벽해요. 저는 아침에 카페인 충전이 필요해요.",
+        "pronun": "퍼펙트. 아이 니드 마이 모닝 캐페인 픽스."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too. Let's go before it gets too crowded.",
+        "reading": "",
+        "ko": "저도요. 너무 붐비기 전에 가요.",
+        "pronun": "미 투. 렛츠 고 비포 잇 겟츠 투 크라우디드."
+      }
+    ]
   }
 }
