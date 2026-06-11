@@ -1,6 +1,13 @@
 {
   "rewrites": [
-    { "source": "/api/script", "destination": "/api/script" },
+    { "source": "/api/script", "destination": "/api/index" },
+    { "source": "/api/generate_all", "destination": "/api/generate_all" },
     { "source": "/(.*)", "destination": "/api/index" }
+  ],
+  "crons": [
+    {
+      "path": "/api/generate_all",
+      "schedule": "0 0 * * *"
+    }
   ]
 }
