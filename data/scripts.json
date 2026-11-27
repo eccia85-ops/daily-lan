@@ -7,56 +7,56 @@
         "reading": "",
         "ko": "일어나다",
         "pronun": "웨이크 업",
-        "example": "I wake up at 7 AM."
-      },
-      {
-        "word": "shower",
-        "reading": "",
-        "ko": "샤워",
-        "pronun": "샤워",
-        "example": "I take a shower in the morning."
+        "example": "I wake up at 7 AM every morning."
       },
       {
         "word": "brush teeth",
         "reading": "",
         "ko": "이 닦다",
         "pronun": "브러쉬 티스",
-        "example": "Don't forget to brush your teeth."
+        "example": "Remember to brush your teeth before bed."
       },
       {
         "word": "coffee",
         "reading": "",
         "ko": "커피",
         "pronun": "커피",
-        "example": "I like to drink coffee."
+        "example": "I need a cup of coffee to start my day."
       },
       {
-        "word": "tea",
+        "word": "breakfast",
         "reading": "",
-        "ko": "차",
-        "pronun": "티",
-        "example": "Would you like some tea?"
+        "ko": "아침 식사",
+        "pronun": "브렉퍼스트",
+        "example": "What do you usually eat for breakfast?"
+      },
+      {
+        "word": "cafe",
+        "reading": "",
+        "ko": "카페",
+        "pronun": "카페이",
+        "example": "Let's meet at the cafe after work."
       },
       {
         "word": "sunny",
         "reading": "",
-        "ko": "햇살 좋은",
+        "ko": "맑은",
         "pronun": "써니",
-        "example": "It's a sunny day today."
+        "example": "It's a sunny day today, perfect for a walk."
       },
       {
         "word": "rainy",
         "reading": "",
         "ko": "비 오는",
         "pronun": "레이니",
-        "example": "The weather is rainy."
+        "example": "Don't forget your umbrella, it looks rainy."
       },
       {
-        "word": "cloudy",
+        "word": "schedule",
         "reading": "",
-        "ko": "흐린",
-        "pronun": "클라우디",
-        "example": "It looks cloudy outside."
+        "ko": "일정",
+        "pronun": "스케줄",
+        "example": "My schedule is very busy this week."
       }
     ]
   },
@@ -64,53 +64,46 @@
     "type": "word",
     "items": [
       {
+        "word": "hotel",
+        "reading": "",
+        "ko": "호텔",
+        "pronun": "호텔",
+        "example": "I booked a hotel for tonight."
+      },
+      {
+        "word": "airport",
+        "reading": "",
+        "ko": "공항",
+        "pronun": "에얼포트",
+        "example": "We need to be at the airport two hours early."
+      },
+      {
+        "word": "directions",
+        "reading": "",
+        "ko": "길 안내",
+        "pronun": "디렉션스",
+        "example": "Can you give me directions to the nearest station?"
+      },
+      {
+        "word": "order",
+        "reading": "",
+        "ko": "주문하다",
+        "pronun": "오더",
+        "example": "I'd like to order a coffee, please."
+      },
+      {
         "word": "reservation",
         "reading": "",
         "ko": "예약",
-        "pronun": "레져베이션",
-        "example": "I need to make a hotel reservation."
+        "pronun": "레저베이션",
+        "example": "Do you have a reservation under the name Kim?"
       },
       {
         "word": "check-in",
         "reading": "",
         "ko": "체크인",
         "pronun": "체크인",
-        "example": "What time is check-in at the hotel?"
-      },
-      {
-        "word": "luggage",
-        "reading": "",
-        "ko": "수하물",
-        "pronun": "러기지",
-        "example": "Please put your luggage on the cart."
-      },
-      {
-        "word": "gate",
-        "reading": "",
-        "ko": "탑승구",
-        "pronun": "게이트",
-        "example": "My flight departs from gate B12."
-      },
-      {
-        "word": "delay",
-        "reading": "",
-        "ko": "지연",
-        "pronun": "딜레이",
-        "example": "Our flight has been delayed."
-      },
-      {
-        "word": "straight",
-        "reading": "",
-        "ko": "직진",
-        "pronun": "스트레이트",
-        "example": "Go straight for two blocks."
-      },
-      {
-        "word": "turn left",
-        "reading": "",
-        "ko": "좌회전",
-        "pronun": "턴 레프트",
-        "example": "Turn left at the next intersection."
+        "example": "Please proceed to the check-in counter."
       },
       {
         "word": "menu",
@@ -118,6 +111,13 @@
         "ko": "메뉴",
         "pronun": "메뉴",
         "example": "Can I see the menu, please?"
+      },
+      {
+        "word": "transportation",
+        "reading": "",
+        "ko": "교통수단",
+        "pronun": "트랜스퍼테이션",
+        "example": "What is the best transportation to the city center?"
       }
     ]
   },
@@ -146,37 +146,37 @@
         "example": "Hiking through the mountains is a great workout."
       },
       {
-        "word": "biking",
+        "word": "backpacking",
         "reading": "",
-        "ko": "자전거 타기",
-        "pronun": "바이킹",
-        "example": "He loves biking along the coast."
+        "ko": "백패킹",
+        "pronun": "백패킹",
+        "example": "They are planning a backpacking trip across Europe."
       },
       {
         "word": "kayaking",
         "reading": "",
-        "ko": "카약 타기",
-        "pronun": "케이킹",
-        "example": "Kayaking on the river is very peaceful."
+        "ko": "카약킹",
+        "pronun": "카약킹",
+        "example": "Kayaking on the river is a peaceful activity."
       },
       {
         "word": "rock climbing",
         "reading": "",
         "ko": "암벽 등반",
-        "pronun": "록 클라이밍",
+        "pronun": "락 클라이밍",
         "example": "Rock climbing requires strength and balance."
       },
       {
-        "word": "stargazing",
+        "word": "fishing",
         "reading": "",
-        "ko": "별 관측",
-        "pronun": "스타게이징",
-        "example": "Stargazing on a clear night is magical."
+        "ko": "낚시",
+        "pronun": "피싱",
+        "example": "He likes fishing for trout in the early morning."
       },
       {
         "word": "bird watching",
         "reading": "",
-        "ko": "조류 관찰",
+        "ko": "새 관찰",
         "pronun": "버드 워칭",
         "example": "Bird watching is a relaxing outdoor hobby."
       }
@@ -186,18 +186,18 @@
     "type": "word",
     "items": [
       {
+        "word": "meeting",
+        "reading": "",
+        "ko": "회의",
+        "pronun": "미팅",
+        "example": "We have a meeting at 10 AM."
+      },
+      {
         "word": "agenda",
         "reading": "",
         "ko": "안건",
         "pronun": "아젠다",
-        "example": "Let's review the agenda for the meeting."
-      },
-      {
-        "word": "minutes",
-        "reading": "",
-        "ko": "회의록",
-        "pronun": "미닛츠",
-        "example": "Please take the minutes of the meeting."
+        "example": "Please review the meeting agenda."
       },
       {
         "word": "feedback",
@@ -207,39 +207,39 @@
         "example": "I need your feedback on this report."
       },
       {
-        "word": "action item",
-        "reading": "",
-        "ko": "실행 항목",
-        "pronun": "액션 아이템",
-        "example": "What are the action items from today's discussion?"
-      },
-      {
         "word": "presentation",
         "reading": "",
         "ko": "발표",
         "pronun": "프레젠테이션",
-        "example": "She will give a presentation tomorrow."
+        "example": "She will give a presentation next week."
       },
       {
-        "word": "slide",
+        "word": "objective",
         "reading": "",
-        "ko": "슬라이드",
-        "pronun": "슬라이드",
-        "example": "Please advance to the next slide."
+        "ko": "목표",
+        "pronun": "옵젝티브",
+        "example": "What is the objective of this project?"
       },
       {
-        "word": "constructive criticism",
+        "word": "action item",
         "reading": "",
-        "ko": "건설적 비판",
-        "pronun": "컨스트럭티브 크리티시즘",
-        "example": "He offered constructive criticism to improve the project."
+        "ko": "실행 항목",
+        "pronun": "액션 아이템",
+        "example": "Let's decide on the action items."
       },
       {
-        "word": "Q&A",
+        "word": "collaboration",
         "reading": "",
-        "ko": "질의응답",
-        "pronun": "큐앤에이",
-        "example": "We will have a Q&A session after the presentation."
+        "ko": "협업",
+        "pronun": "콜라보레이션",
+        "example": "Good collaboration is key to success."
+      },
+      {
+        "word": "venue",
+        "reading": "",
+        "ko": "장소",
+        "pronun": "베뉴",
+        "example": "What is the venue for the conference?"
       }
     ]
   },
@@ -249,72 +249,58 @@
       {
         "speaker": "A",
         "text": "Good morning!",
-        "reading": "굿 모닝",
+        "reading": "굿 모닝!",
         "ko": "좋은 아침이에요!",
-        "pronun": "굿 모오닝!"
+        "pronun": "굿 모닝!"
       },
       {
         "speaker": "B",
-        "text": "Morning! How are you?",
-        "reading": "모닝! 하우 아 유?",
-        "ko": "아침이에요! 어떻게 지내세요?",
-        "pronun": "모오닝! 하우 아 유?"
+        "text": "Good morning to you too.",
+        "reading": "굿 모닝 투 유 투.",
+        "ko": "당신도 좋은 아침이에요.",
+        "pronun": "굿 모닝 투 유 투."
       },
       {
         "speaker": "A",
-        "text": "I am fine, thank you.",
-        "reading": "아이 엠 파인, 땡큐.",
-        "ko": "잘 지내요, 감사합니다.",
-        "pronun": "아이 엠 파인, 땡큐."
+        "text": "How are you today?",
+        "reading": "하우 알 유 투데이?",
+        "ko": "오늘 기분이 어떠세요?",
+        "pronun": "하우 아유 투데이?"
       },
       {
         "speaker": "B",
-        "text": "What are you doing today?",
-        "reading": "왓 아 유 두잉 투데이?",
-        "ko": "오늘 뭐 하세요?",
-        "pronun": "왓 아 유 두잉 투데이?"
+        "text": "I'm good, thank you.",
+        "reading": "아임 굿, 땡큐.",
+        "ko": "좋아요, 감사합니다.",
+        "pronun": "아임 굿, 땡큐."
       },
       {
         "speaker": "A",
-        "text": "I am going to a cafe.",
-        "reading": "아이 엠 고잉 투 어 카페.",
-        "ko": "카페에 갈 거예요.",
-        "pronun": "아이 엠 고잉 투 어 카페."
+        "text": "What's the weather like?",
+        "reading": "왓츠 더 웨더 라이크?",
+        "ko": "날씨가 어떻습니까?",
+        "pronun": "왓츠 더 웨더 라이크?"
       },
       {
         "speaker": "B",
-        "text": "Oh, nice. What is the weather like?",
-        "reading": "오, 나이스. 왓 이즈 더 웨더 라이크?",
-        "ko": "오, 좋네요. 날씨는 어때요?",
-        "pronun": "오, 나이스. 왓 이즈 더 웨더 라이크?"
+        "text": "It's sunny and warm.",
+        "reading": "잇츠 써니 앤 웜.",
+        "ko": "화창하고 따뜻해요.",
+        "pronun": "잇츠 써니 앤 웜."
       },
       {
         "speaker": "A",
-        "text": "It is sunny and warm.",
-        "reading": "잇 이즈 써니 앤 웜.",
-        "ko": "맑고 따뜻해요.",
-        "pronun": "잇 이즈 써니 앤 웜."
+        "text": "Great! Let's go to a cafe.",
+        "reading": "그레이트! 렛츠 고 투 어 카페.",
+        "ko": "좋아요! 카페에 갑시다.",
+        "pronun": "그레이트! 렛츠 고 투 어 카페."
       },
       {
         "speaker": "B",
-        "text": "That sounds lovely.",
-        "reading": "댓 사운즈 러블리.",
-        "ko": "듣기 좋네요.",
-        "pronun": "댓 사운즈 러블리."
-      },
-      {
-        "speaker": "A",
-        "text": "Yes, it is a beautiful day.",
-        "reading": "예스, 잇 이즈 어 뷰티풀 데이.",
-        "ko": "네, 아름다운 날이에요.",
-        "pronun": "예스, 잇 이즈 어 뷰티풀 데이."
-      },
-      {
-        "speaker": "B",
-        "text": "Enjoy your day!",
-        "reading": "인조이 유어 데이!",
-        "ko": "하루 즐겁게 보내세요!",
-        "pronun": "인조이 유어 데이!"
+        "text": "Sounds good!",
+        "reading": "사운즈 굿!",
+        "ko": "좋은 생각이에요!",
+        "pronun": "사운즈 굿!"
       }
     ]
   },
@@ -323,59 +309,73 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "Hello. I have a reservation.",
+        "text": "Hello, I have a reservation.",
         "reading": "",
-        "ko": "안녕하세요. 예약했습니다.",
-        "pronun": "헬로우. 아이 햅 어 레저베이션."
+        "ko": "안녕하세요, 예약했습니다.",
+        "pronun": "헬로우, 아이 해버 리저베이션."
       },
       {
         "speaker": "B",
-        "text": "Welcome! What is your name, please?",
+        "text": "What is your name, please?",
         "reading": "",
-        "ko": "어서 오세요! 성함이 어떻게 되시나요?",
-        "pronun": "웰컴! 왓 이즈 유어 네임, 플리즈?"
+        "ko": "성함이 어떻게 되시나요?",
+        "pronun": "왓 이즈 유어 네임, 플리즈?"
       },
       {
         "speaker": "A",
-        "text": "My name is [Your Name].",
+        "text": "My name is Kim.",
         "reading": "",
-        "ko": "제 이름은 [당신의 이름]입니다.",
-        "pronun": "마이 네임 이즈 [유어 네임]."
+        "ko": "제 이름은 김입니다.",
+        "pronun": "마이 네임 이즈 김."
       },
       {
         "speaker": "B",
-        "text": "Thank you. Your room is ready.",
+        "text": "This way, please. Your room is on the third floor.",
         "reading": "",
-        "ko": "감사합니다. 방 준비되었습니다.",
-        "pronun": "땡큐. 유어 룸 이즈 레디."
+        "ko": "이쪽입니다. 방은 3층입니다.",
+        "pronun": "디스 웨이, 플리즈. 유어 룸 이즈 온 더 써드 플로어."
       },
       {
         "speaker": "A",
-        "text": "Excuse me, where is the airport?",
+        "text": "Thank you. Where is the airport?",
         "reading": "",
-        "ko": "실례합니다, 공항이 어디인가요?",
-        "pronun": "익스큐즈 미, 웨어 이즈 더 에어포트?"
+        "ko": "감사합니다. 공항은 어디인가요?",
+        "pronun": "땡큐. 웨어 이즈 더 에어포트?"
       },
       {
         "speaker": "B",
         "text": "Go straight, then turn left.",
         "reading": "",
-        "ko": "직진하시다가 왼쪽으로 도세요.",
-        "pronun": "고 스트레이트, 댄 턴 레프트."
+        "ko": "직진해서 왼쪽으로 도세요.",
+        "pronun": "고 스트레이트, 덴 턴 레프트."
       },
       {
         "speaker": "A",
-        "text": "I would like a coffee, please.",
+        "text": "Excuse me, can I have the menu?",
         "reading": "",
-        "ko": "커피 한 잔 주세요.",
-        "pronun": "아이 우드 라이크 어 커피, 플리즈."
+        "ko": "실례합니다, 메뉴를 받을 수 있을까요?",
+        "pronun": "익스큐즈 미, 캔 아이 해버 더 메뉴?"
       },
       {
         "speaker": "B",
-        "text": "Here you go. Enjoy!",
+        "text": "Yes, here you are.",
         "reading": "",
-        "ko": "여기 있습니다. 맛있게 드세요!",
-        "pronun": "히어 유 고. 인조이!"
+        "ko": "네, 여기 있습니다.",
+        "pronun": "예스, 히어 유 알."
+      },
+      {
+        "speaker": "A",
+        "text": "I want to order bibimbap.",
+        "reading": "",
+        "ko": "비빔밥을 주문하고 싶습니다.",
+        "pronun": "아이 원트 투 오더 비빔밥."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay. Anything else?",
+        "reading": "",
+        "ko": "네. 다른 거 더 필요하신가요?",
+        "pronun": "오케이. 애니띵 엘스?"
       }
     ]
   },
@@ -384,134 +384,73 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "Hello! What do you do for fun?",
+        "text": "Hi, what do you like to do in your free time?",
         "reading": "",
-        "ko": "안녕하세요! 재미로 무엇을 하세요?",
-        "pronun": "헬로우! 왓 두 유 두 포 펀?"
+        "ko": "안녕하세요, 쉬는 시간에 무엇을 하는 것을 좋아하세요?",
+        "pronun": "하이, 왓 두 유 라이크 투 두 인 요 프리 타임?"
       },
       {
         "speaker": "B",
-        "text": "I like cycling. It's good exercise.",
+        "text": "I really like cycling. It's fun.",
         "reading": "",
-        "ko": "저는 자전거 타는 것을 좋아해요. 좋은 운동이에요.",
-        "pronun": "아이 라이크 사이클링. 잇츠 굿 엑서사이즈."
+        "ko": "저는 자전거 타는 것을 정말 좋아해요. 재미있어요.",
+        "pronun": "아이 리얼리 라이크 사이클링. 잇츠 펀."
       },
       {
         "speaker": "A",
-        "text": "Cycling is great! I enjoy camping too.",
+        "text": "Oh, cycling is great! Do you cycle every weekend?",
         "reading": "",
-        "ko": "자전거 타기 정말 좋아요! 저도 캠핑을 즐겨요.",
-        "pronun": "사이클링 이즈 그레이트! 아이 인조이 캠핑 투."
+        "ko": "오, 자전거 타기 정말 좋죠! 매주 주말마다 자전거 타세요?",
+        "pronun": "오, 사이클링 이즈 그레이트! 두 유 사이클 에브리 위켄드?"
       },
       {
         "speaker": "B",
-        "text": "Camping sounds fun! Do you go often?",
+        "text": "Yes, usually. Sometimes I go camping too.",
         "reading": "",
-        "ko": "캠핑 재미있겠어요! 자주 가세요?",
-        "pronun": "캠핑 사운즈 펀! 두 유 고 오픈?"
+        "ko": "네, 보통 그래요. 가끔 캠핑도 가요.",
+        "pronun": "예스, 유주얼리. 썸타임즈 아이 고 캠핑 투."
       },
       {
         "speaker": "A",
-        "text": "Yes, I go camping once a month.",
+        "text": "Camping! That sounds adventurous.",
         "reading": "",
-        "ko": "네, 한 달에 한 번 캠핑을 가요.",
-        "pronun": "예스, 아이 고 캠핑 원스 어 먼쓰."
+        "ko": "캠핑이요! 그거 멋지겠는데요.",
+        "pronun": "캠핑! 댓 사운즈 어드벤처러스."
       },
       {
         "speaker": "B",
-        "text": "Wow! What other outdoor activities do you like?",
+        "text": "It is. I love being outdoors.",
         "reading": "",
-        "ko": "와! 다른 야외 활동은 무엇을 좋아하세요?",
-        "pronun": "와우! 왓 아더 아웃도어 액티비티즈 두 유 라이크?"
+        "ko": "그래요. 저는 야외에 있는 것을 정말 좋아해요.",
+        "pronun": "잇 이즈. 아이 러브 빙 아웃도어스."
       },
       {
         "speaker": "A",
-        "text": "I like hiking in the mountains.",
+        "text": "Me too. Do you have any favorite outdoor activities?",
         "reading": "",
-        "ko": "저는 산에서 하이킹하는 것을 좋아해요.",
-        "pronun": "아이 라이크 하이킹 인 더 마운틴즈."
+        "ko": "저도요. 가장 좋아하는 야외 활동이 있으세요?",
+        "pronun": "미 투. 두 유 해브 애니 페이버릿 아웃도어 액티비티즈?"
       },
       {
         "speaker": "B",
-        "text": "Hiking is a good way to enjoy nature.",
+        "text": "I enjoy hiking and fishing.",
         "reading": "",
-        "ko": "하이킹은 자연을 즐기기에 좋은 방법이에요.",
-        "pronun": "하이킹 이즈 어 굿 웨이 투 인조이 네이처."
+        "ko": "저는 등산과 낚시를 즐겨요.",
+        "pronun": "아이 인조이 하이킹 앤 피싱."
       },
       {
         "speaker": "A",
-        "text": "Yes, it is. It's very peaceful.",
+        "text": "Those are nice hobbies. Maybe we can do something together sometime.",
         "reading": "",
-        "ko": "네, 그래요. 아주 평화로워요.",
-        "pronun": "예스, 잇 이즈. 잇츠 베리 피스풀."
+        "ko": "그것들은 좋은 취미네요. 언젠가 같이 무언가를 할 수도 있겠어요.",
+        "pronun": "도즈 알 나이스 하비스. 메이비 위 캔 두 썸씽 투게더 썸타임."
       },
       {
         "speaker": "B",
-        "text": "I want to try cycling with you sometime.",
+        "text": "That would be fun!",
         "reading": "",
-        "ko": "언젠가 당신과 함께 자전거를 타보고 싶어요.",
-        "pronun": "아이 원트 투 트라이 사이클링 위드 유 섬타임."
-      }
-    ]
-  },
-  "en_beginner_work": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "Hello, John. Are you ready for the meeting?",
-        "reading": "",
-        "ko": "안녕하세요, 존. 회의 준비됐어요?",
-        "pronun": "헬로, 존. 알유 레디 포더 미링?"
-      },
-      {
-        "speaker": "B",
-        "text": "Yes, I am. I have my notes.",
-        "reading": "",
-        "ko": "네, 준비됐어요. 제 메모 있어요.",
-        "pronun": "예스, 아이 엠. 아이 햅 마이 노츠."
-      },
-      {
-        "speaker": "A",
-        "text": "Good. We need to discuss the project update.",
-        "reading": "",
-        "ko": "좋아요. 프로젝트 업데이트를 논의해야 해요.",
-        "pronun": "굿. 위 니드 투 디스커스 더 프로젝트 업데이트."
-      },
-      {
-        "speaker": "B",
-        "text": "Okay. I also prepared a short presentation.",
-        "reading": "",
-        "ko": "알겠습니다. 짧은 발표도 준비했어요.",
-        "pronun": "오케이. 아이 올소 프리페어드 어 숏 프리젠테이션."
-      },
-      {
-        "speaker": "A",
-        "text": "That's great! Feedback is important.",
-        "reading": "",
-        "ko": "훌륭해요! 피드백은 중요해요.",
-        "pronun": "댓츠 그레이트! 피드백 이즈 임포턴트."
-      },
-      {
-        "speaker": "B",
-        "text": "Yes, I agree. Any questions before we start?",
-        "reading": "",
-        "ko": "네, 동의해요. 시작하기 전에 질문 있나요?",
-        "pronun": "예스, 아이 어그리. 애니 퀘스천스 비포 위 스타트?"
-      },
-      {
-        "speaker": "A",
-        "text": "No, not yet. Let's begin.",
-        "reading": "",
-        "ko": "아니요, 아직 없어요. 시작합시다.",
-        "pronun": "노, 낫 옡. 렛츠 비긴."
-      },
-      {
-        "speaker": "B",
-        "text": "Alright. Thank you for your time.",
-        "reading": "",
-        "ko": "좋습니다. 시간 내주셔서 감사합니다.",
-        "pronun": "올라이트. 땡큐 포 유어 타임."
+        "ko": "그거 재미있겠네요!",
+        "pronun": "댓 우드 비 펀!"
       }
     ]
   },
@@ -520,73 +459,66 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "Hey, good morning! What a lovely day.",
+        "text": "Morning, Jaehyun! How was your sleep?",
         "reading": "",
-        "ko": "좋은 아침이에요! 정말 날씨 좋네요.",
-        "pronun": "헤이, 굿 모닝! 왓 어 러블리 데이."
+        "ko": "재현 씨, 좋은 아침이에요! 잠은 잘 잤어요?",
+        "pronun": "모닝, 제이현! 하우 워즈 유어 슬립?"
       },
       {
         "speaker": "B",
-        "text": "Oh, hi! Yeah, the sun is finally out.",
+        "text": "Oh, hi Ji-eun! Pretty good, thanks. Just a bit groggy.",
         "reading": "",
-        "ko": "아, 안녕하세요! 네, 드디어 해가 쨍쨍하네요.",
-        "pronun": "오, 하이! 예, 더 썬 이즈 파이널리 아웃."
+        "ko": "오, 안녕하세요, 지은 씨! 꽤 잘 잤어요. 조금 멍할 뿐이에요.",
+        "pronun": "오, 하이, 지-은! 프리티 굿, 땡스. 저스트 어 비트 그로기."
       },
       {
         "speaker": "A",
-        "text": "I just woke up a little while ago.",
+        "text": "Me too. I'm heading to that new cafe down the street. Want to join?",
         "reading": "",
-        "ko": "저도 조금 전에 일어났어요.",
-        "pronun": "아이 저스트 워크 업 어 리를 와일 어고우."
+        "ko": "저도요. 저기 길 아래 새 카페 가려고 하는데. 같이 갈래요?",
+        "pronun": "미 투. 아임 헤딩 투 댓 뉴 카페 다운 더 스트릿. 원트 투 조인?"
       },
       {
         "speaker": "B",
-        "text": "Me too. I'm thinking of grabbing some coffee.",
+        "text": "Sounds great! I could really use a coffee. What’s the weather like today?",
         "reading": "",
-        "ko": "저도요. 커피 한잔하러 갈까 생각 중이에요.",
-        "pronun": "미 투. 아임 씽킹 오브 그래빙 썸 커피."
+        "ko": "좋아요! 커피가 정말 필요했는데. 오늘 날씨는 어때요?",
+        "pronun": "사운즈 그레이트! 아이 쿠드 리얼리 유즈 어 커피. 왓츠 더 웨더 라이크 투데이?"
       },
       {
         "speaker": "A",
-        "text": "That sounds like a great idea. Which cafe are you going to?",
+        "text": "It’s a bit chilly, but sunny. Perfect for a walk.",
         "reading": "",
-        "ko": "좋은 생각이에요. 어느 카페에 가시려고요?",
-        "pronun": "댓 사운즈 라이크 어 그레이트 아이디어. 위치 카페 아 유 고잉 투?"
+        "ko": "약간 쌀쌀하지만, 햇살이 좋아요. 산책하기 딱이네요.",
+        "pronun": "이츠 어 비트 칠리, 벗 써니. 퍼펙트 포 어 워크."
       },
       {
         "speaker": "B",
-        "text": "Maybe the one down the street, the cozy one.",
+        "text": "Yeah, I saw the forecast. Hopefully, it stays that way.",
         "reading": "",
-        "ko": "아마 길 건너편에 있는 아늑한 곳으로요.",
-        "pronun": "메이비 더 원 다운 더 스트릿, 더 코지 원."
+        "ko": "네, 일기 예보 봤어요. 제발 그렇기를 바라요.",
+        "pronun": "야, 아이 쏘 더 포캐스트. 호프풀리, 잇 스테이 댓 웨이."
       },
       {
         "speaker": "A",
-        "text": "Oh, I know that one. They have really good pastries.",
+        "text": "Did you have breakfast yet?",
         "reading": "",
-        "ko": "아, 거기 알아요. 빵도 정말 맛있어요.",
-        "pronun": "오, 아이 노 댓 원. 데이 해브 리얼리 굿 페이스트리스."
+        "ko": "아직 아침 식사는 했어요?",
+        "pronun": "디드 유 해브 브렉퍼스트 얍?"
       },
       {
         "speaker": "B",
-        "text": "Exactly! So, what are your plans for today?",
+        "text": "No, not yet. Maybe I'll grab something at the cafe.",
         "reading": "",
-        "ko": "맞아요! 그래서, 오늘 계획이 어떻게 되세요?",
-        "pronun": "익젝틀리! 소, 왓 아 유어 플랜스 포 투데이?"
+        "ko": "아니요, 아직요. 카페에서 뭐 좀 사 먹어야겠어요.",
+        "pronun": "노, 낫 얍. 메이비 아일 그랩 썸씽 앳 더 카페."
       },
       {
         "speaker": "A",
-        "text": "Just some errands and then maybe read a book.",
+        "text": "Good idea. Let’s go then!",
         "reading": "",
-        "ko": "그냥 볼일 좀 보고, 그러고 나서 책을 좀 읽으려고요.",
-        "pronun": "저스트 썸 에런즈 앤 덴 메이비 리드 어 북."
-      },
-      {
-        "speaker": "B",
-        "text": "Sounds relaxing. Enjoy your day!",
-        "reading": "",
-        "ko": "여유로워 보이네요. 좋은 하루 보내세요!",
-        "pronun": "사운즈 릴랙싱. 엔조이 유어 데이!"
+        "ko": "좋은 생각이네요. 그럼 가요!",
+        "pronun": "굿 아이디어. 렛츠 고 덴!"
       }
     ]
   },
@@ -595,73 +527,73 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "Excuse me, do you know where the check-in counter for flight KE701 is?",
+        "text": "Excuse me, I'd like to check in, please.",
         "reading": "",
-        "ko": "실례합니다, KE701편 체크인 카운터가 어디인지 아시나요?",
-        "pronun": "익스큐즈 미, 두 유 노 웨어 더 체크인 카운터 포 플라이트 KE701 이즈?"
+        "ko": "저기요, 체크인하려고요.",
+        "pronun": "익스큐즈 미, 아이드 라이크 투 체크 인, 플리즈."
       },
       {
         "speaker": "B",
-        "text": "Oh, yes. It's over there, past the security check.",
+        "text": "Certainly. Do you have a reservation under your name?",
         "reading": "",
-        "ko": "아, 네. 저기 보안 검색대 지나서 있어요.",
-        "pronun": "오, 예스. 잇츠 오버 데어, 패스트 더 시큐리티 체크."
+        "ko": "물론입니다. 예약하신 성함이 어떻게 되시나요?",
+        "pronun": "서튼니. 두 유 해브 어 리저베이션 언더 유어 네임?"
       },
       {
         "speaker": "A",
-        "text": "Thank you! And where can I find the departure gate?",
+        "text": "Yes, it's under the name 'Kim'. K-I-M.",
         "reading": "",
-        "ko": "감사합니다! 그리고 출발 게이트는 어디서 찾을 수 있나요?",
-        "pronun": "땡큐! 앤드 웨어 캔 아이 파인드 더 디파처 게이트?"
+        "ko": "네, '김' 이름으로 예약했습니다. K-I-M.",
+        "pronun": "예스, 잇츠 언더 더 네임 '킴'. 케이-아이-엠."
       },
       {
         "speaker": "B",
-        "text": "Your gate is B23. It's a bit of a walk, follow the signs.",
+        "text": "Thank you. And your room number is 305. Here's your key card.",
         "reading": "",
-        "ko": "게이트는 B23입니다. 좀 걸어가야 해요, 표지판을 따라가세요.",
-        "pronun": "유어 게이트 이즈 비 트웬티 쓰리. 잇츠 어 비트 오브 어 워크, 팔로우 더 사인스."
+        "ko": "감사합니다. 객실 번호는 305호이고요. 여기 카드 키입니다.",
+        "pronun": "쌩큐. 앤드 유어 룸 넘버 이즈 쓰리-오-파이브. 히어즈 유어 키 카드."
       },
       {
         "speaker": "A",
-        "text": "Got it. Is there a good place to grab some lunch around here?",
+        "text": "Great. Could you tell me how to get to the airport from here?",
         "reading": "",
-        "ko": "알겠습니다. 여기 근처에 점심 먹을 만한 좋은 곳이 있나요?",
-        "pronun": "갓 잇. 이즈 데어 어 굿 플레이스 투 그랩 썸 런치 어라운드 히어?"
+        "ko": "좋아요. 여기서 공항까지 어떻게 가는지 알려주시겠어요?",
+        "pronun": "그레이트. 쿠드 유 텔 미 하우 투 겟 투 더 에어포트 프롬 히어?"
       },
       {
         "speaker": "B",
-        "text": "Definitely. There's a nice cafe on the second floor, or a food court downstairs.",
+        "text": "Sure. Take the subway line number two from the station downstairs, and transfer at City Hall for the airport express.",
         "reading": "",
-        "ko": "그럼요. 2층에 괜찮은 카페도 있고, 아래층에 푸드코트도 있어요.",
-        "pronun": "데피닛리. 데어즈 어 나이스 카페 온 더 세컨드 플로어, 오어 어 푸드코트 다운스테어스."
+        "ko": "네. 아래층 역에서 지하철 2호선을 타시고, 시청에서 공항철도로 갈아타시면 됩니다.",
+        "pronun": "슈어. 테이크 더 서브웨이 라인 넘버 투 프롬 더 스테이션 다운스테어즈, 앤드 트랜스퍼 앳 시티 홀 포 더 에어포트 익스프레스."
       },
       {
         "speaker": "A",
-        "text": "Hmm, I think I'll try the cafe. What do you recommend there?",
+        "text": "Okay, subway line two and then transfer at City Hall. Got it.",
         "reading": "",
-        "ko": "음, 카페에 가봐야겠어요. 거기서 뭘 추천하시나요?",
-        "pronun": "흠, 아이 씽크 아이 윌 트라이 더 카페. 왓 두 유 리커멘드 데어?"
+        "ko": "알겠습니다. 지하철 2호선 타고 시청에서 갈아타는 거죠. 알았어요.",
+        "pronun": "오케이, 서브웨이 라인 투 앤드 덴 트랜스퍼 앳 시티 홀. 갓 잇."
       },
       {
         "speaker": "B",
-        "text": "Their sandwiches are really good, and they have great coffee too.",
+        "text": "Enjoy your stay! And have a safe trip.",
         "reading": "",
-        "ko": "샌드위치가 정말 맛있고, 커피도 훌륭해요.",
-        "pronun": "데어 샌드위치스 알 리얼리 굿, 앤드 데이 해브 그레이트 커피 투."
+        "ko": "좋은 시간 보내세요! 그리고 안전한 여행 되세요.",
+        "pronun": "인조이 유어 스테이! 앤드 해브 어 세이프 트립."
       },
       {
         "speaker": "A",
-        "text": "Perfect! Thanks so much for your help.",
+        "text": "Thank you so much!",
         "reading": "",
-        "ko": "완벽하네요! 도움 주셔서 정말 감사합니다.",
-        "pronun": "퍼펙트! 땡스 소 머치 포 유어 헬프."
+        "ko": "정말 감사합니다!",
+        "pronun": "쌩큐 소 머치!"
       },
       {
-        "speaker": "B",
-        "text": "You're welcome! Have a pleasant flight.",
+        "speaker": "A",
+        "text": "Excuse me, I'd like to order a coffee and a croissant, please.",
         "reading": "",
-        "ko": "천만에요! 즐거운 비행 되세요.",
-        "pronun": "유 알 웰컴! 해브 어 플레전트 플라이트."
+        "ko": "저기요, 커피랑 크루아상 하나 주문할게요.",
+        "pronun": "익스큐즈 미, 아이드 라이크 투 오더 어 커피 앤드 어 크루아상, 플리즈."
       }
     ]
   },
@@ -670,73 +602,73 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "So, what do you usually do to relax after a busy week?",
+        "text": "Hey, what did you do last weekend?",
         "reading": "",
-        "ko": "그래서, 바쁜 한 주를 보낸 후에는 보통 어떻게 스트레스를 풀어요?",
-        "pronun": "쏘, 왓 두 유 유주얼리 두 투 릴랙스 애프터 어 비지 윅?"
+        "ko": "지난 주말에 뭐 했어?",
+        "pronun": "헤이, 왓 디드 유 두 래스트 위켄드?"
       },
       {
         "speaker": "B",
-        "text": "Oh, I love being outdoors. I often go cycling.",
+        "text": "I went cycling in the park. It was so nice and sunny.",
         "reading": "",
-        "ko": "아, 저는 야외 활동하는 것을 좋아해요. 자주 자전거를 타러 가요.",
-        "pronun": "오, 아이 러브 빙 아웃도어스. 아이 오픈 고우 사이클링."
+        "ko": "공원에서 자전거 탔어. 날씨가 정말 좋고 화창했지.",
+        "pronun": "아이 웬트 사이클링 인 더 파크. 잇 워즈 소 나이스 앤 서니."
       },
       {
         "speaker": "A",
-        "text": "Cycling? That sounds really healthy and fun!",
+        "text": "Oh, cycling! I haven't been cycling in ages. I love being outdoors.",
         "reading": "",
-        "ko": "자전거 타기요? 정말 건강하고 재미있겠는데요!",
-        "pronun": "사이클링? 댓 사운즈 리얼리 헬씨 앤 펀!"
+        "ko": "오, 사이클링! 나도 진짜 오랜만에 자전거 타야겠다. 나도 야외 활동 진짜 좋아해.",
+        "pronun": "오, 사이클링! 아이 해븐트 빈 사이클링 인 에이즈. 아이 러브 빙 아웃도어."
       },
       {
         "speaker": "B",
-        "text": "It is! I usually ride around the park or sometimes along the river.",
+        "text": "Me too! I'm planning to go camping next month, actually.",
         "reading": "",
-        "ko": "그렇죠! 보통 공원 주변이나 가끔 강가를 따라 달리곤 해요.",
-        "pronun": "잇 이즈! 아이 유주얼리 라이드 어라운드 더 파크 오 썸타임즈 얼롱 더 리버."
+        "ko": "나도 그래! 다음 달에는 캠핑 갈 계획이야, 사실.",
+        "pronun": "미 투! 아임 플래닝 투 고 캠핑 넥스트 먼스, 액츄얼리."
       },
       {
         "speaker": "A",
-        "text": "That's a great way to clear your head. Do you do any camping too?",
+        "text": "Camping! That sounds like fun. Where are you thinking of going?",
         "reading": "",
-        "ko": "머리를 맑게 하는 아주 좋은 방법이네요. 캠핑도 하시나요?",
-        "pronun": "댓츠 어 그레이트 웨이 투 클리어 유어 헤드. 두 유 두 애니 캠핑 투?"
+        "ko": "캠핑! 그거 재밌겠다. 어디로 갈 생각이야?",
+        "pronun": "캠핑! 댓 사운즈 라이크 펀. 웨어 알 유 씽킹 오브 고잉?"
       },
       {
         "speaker": "B",
-        "text": "Yes, I do! Camping is another favorite hobby of mine.",
+        "text": "There's a nice campsite near the mountains. I heard the hiking trails are amazing.",
         "reading": "",
-        "ko": "네, 해요! 캠핑도 제가 좋아하는 또 다른 취미예요.",
-        "pronun": "예스, 아이 두! 캠핑 이즈 어나더 페이버릿 호비 오브 마인."
+        "ko": "산 근처에 좋은 캠핑장이 있어. 하이킹 코스가 정말 멋지다고 들었어.",
+        "pronun": "데어스 어 나이스 캠핑사이트 니어 더 마운틴스. 아이 허드 더 하이킹 트레일즈 알 어메이징."
       },
       {
         "speaker": "A",
-        "text": "Wow, you're quite an outdoor enthusiast then.",
+        "text": "Hiking and camping together, that's the perfect combination.",
         "reading": "",
-        "ko": "와, 그럼 당신은 꽤 야외 활동을 즐기시는 분이네요.",
-        "pronun": "와우, 유어 콰이트 앤 아웃도어 인튜지애스트 댄."
+        "ko": "하이킹이랑 캠핑을 같이 하는 거, 그거 정말 완벽한 조합이지.",
+        "pronun": "하이킹 앤 캠핑 투게더, 댓츠 더 퍼펙트 컴비네이션."
       },
       {
         "speaker": "B",
-        "text": "I try to get out as much as I can. It helps me recharge.",
+        "text": "Yeah, I'm really looking forward to it. It's good to disconnect sometimes.",
         "reading": "",
-        "ko": "가능한 한 많이 나가려고 노력해요. 그게 에너지를 충전하는 데 도움이 되거든요.",
-        "pronun": "아이 트라이 투 겟 아웃 애즈 머치 애즈 아이 캔. 잇 헬프스 미 리차지."
+        "ko": "응, 정말 기대돼. 가끔은 (일상에서) 벗어나는 것도 좋은 것 같아.",
+        "pronun": "야, 아임 리얼리 루킹 포워드 투 잇. 잇츠 굿 투 디스커넥트 썸타임즈."
       },
       {
         "speaker": "A",
-        "text": "That's good advice. I should probably try some outdoor activities too.",
+        "text": "Totally agree. Maybe we can plan a cycling trip together sometime soon?",
         "reading": "",
-        "ko": "좋은 조언이네요. 저도 야외 활동을 좀 해봐야겠어요.",
-        "pronun": "댓츠 굿 어드바이스. 아이 슈드 프로바블리 트라이 썸 아웃도어 액티비티스 투."
+        "ko": "정말 동감이야. 우리도 조만간 같이 자전거 여행 한번 계획해 볼까?",
+        "pronun": "토털리 어그리. 메이비 위 캔 플랜 어 사이클링 트립 투게더 썸타임 순?"
       },
       {
         "speaker": "B",
-        "text": "You definitely should! You might discover a new passion.",
+        "text": "That sounds like a great idea! Let's do it.",
         "reading": "",
-        "ko": "꼭 그래야 해요! 새로운 열정을 발견할 수도 있을 거예요.",
-        "pronun": "유 데피닛리 슈드! 유 마잇 디스커버 어 뉴 패션."
+        "ko": "그거 정말 좋은 생각인데! 그러자.",
+        "pronun": "댓 사운즈 라이크 어 그레이트 아이디어! 렛츠 두 잇."
       }
     ]
   },
@@ -745,345 +677,73 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "Hi John, did you manage to get the meeting minutes ready?",
+        "text": "Hey, did you manage to prepare the slides for the project meeting tomorrow?",
         "reading": "",
-        "ko": "존, 회의록 준비 다 했어요?",
-        "pronun": "하이 존, 디쥬 매니지 투 겟 더 미팅 미닛츠 레디?"
+        "ko": "있잖아, 내일 프로젝트 회의 때 쓸 슬라이드 준비했어?",
+        "pronun": "에이, 디주 매니지 투 프리페어 더 슬라이즈 퍼 더 프로젝트 미팅 투마로우?"
       },
       {
         "speaker": "B",
-        "text": "Almost, Sarah. Just need to add a couple of action items from yesterday's discussion.",
+        "text": "Almost. I just need to finalize the Q&A section.",
         "reading": "",
-        "ko": "거의 다 됐어요, 사라. 어제 논의했던 몇 가지 실행 항목만 추가하면 돼요.",
-        "pronun": "아모스트, 사라. 저스트 니드 투 애드 어 커플 오브 액션 아이템즈 프롬 예스터데이즈 디스커션."
+        "ko": "거의 다 됐어. 질의응답 부분만 마무리하면 돼.",
+        "pronun": "아우모스트. 아이 저스트 니드 투 파이널라이즈 더 큐앤에이 섹션."
       },
       {
         "speaker": "A",
-        "text": "Great. The team lead wanted them by end of day for the project update.",
+        "text": "Great! I wanted to give you some feedback on the market research data.",
         "reading": "",
-        "ko": "잘 됐네요. 팀장님이 프로젝트 업데이트 때문에 오늘 업무 시간 끝날 때까지 그걸 원하셨어요.",
-        "pronun": "그레잇. 더 팀 리드 원티드 뎀 바이 엔드 오브 데이 포 더 프로젝트 업데이트."
+        "ko": "잘됐네! 시장 조사 데이터에 대해 피드백 좀 주고 싶었어.",
+        "pronun": "그레이트! 아이 원티드 투 기브 유 섬 피드백 온 더 마켓 리서치 데이터."
       },
       {
         "speaker": "B",
-        "text": "I know. Speaking of updates, how's your presentation for the client coming along?",
+        "text": "Oh, okay. Is it something major?",
         "reading": "",
-        "ko": "알아요. 업데이트라고 하니, 고객님을 위한 발표는 어떻게 돼가고 있나요?",
-        "pronun": "아이 노. 스피킹 오브 업데이츠, 하우즈 유어 프레젠테이션 포 더 클라이언트 커밍 얼롱?"
+        "ko": "아, 그래? 뭔가 중요한 거야?",
+        "pronun": "오우, 오케이. 이즈 잇 섬씽 메이저?"
       },
       {
         "speaker": "A",
-        "text": "It's going well, thanks. I think I've got all the key data compiled.",
+        "text": "Not really, just a few suggestions for clarity. Your presentation skills are quite good, by the way.",
         "reading": "",
-        "ko": "잘 되고 있어요, 고마워요. 주요 데이터를 모두 취합한 것 같아요.",
-        "pronun": "잇츠 고잉 웰, 땡스. 아이 씽크 아이브 갓 올 더 키 데이터 컴파일드."
+        "ko": "엄청 중요한 건 아니고, 명확성을 높이기 위한 몇 가지 제안일 뿐이야. 근데 발표 실력은 꽤 좋아.",
+        "pronun": "낫 리얼리, 저스트 어 퓨 서제스티언스 퍼 클라리티. 유어 프리젠테이션 스킬즈 알 콰이트 굿, 바이 더 웨이."
       },
       {
         "speaker": "B",
-        "text": "That's good to hear. Do you want me to take a look at your slides before the rehearsal?",
+        "text": "Thanks! I appreciate that. I'm still a bit nervous before big presentations.",
         "reading": "",
-        "ko": "듣기 좋네요. 리허설 전에 슬라이드를 봐드릴까요?",
-        "pronun": "댓츠 굿 투 히어. 두 유 원트 미 투 테이크 어 룩 앳 유어 슬라이즈 비포 더 리허설?"
+        "ko": "고마워! 그렇게 말해주니 고맙네. 큰 발표 전에는 아직도 좀 긴장돼.",
+        "pronun": "땡스! 아이 어프리시에이트 댓. 아임 스틸 어 빗 너버스 비포 빅 프리젠테이션스."
       },
       {
         "speaker": "A",
-        "text": "That would be really helpful, actually. I'd appreciate some feedback.",
+        "text": "That's completely normal. We can do a quick run-through after work today if you want.",
         "reading": "",
-        "ko": "실제로 정말 도움이 될 것 같아요. 피드백 좀 주시면 감사하겠습니다.",
-        "pronun": "댓 우드 비 리얼리 헬프풀, 액츄얼리. 아이드 어프리시에이트 썸 피드백."
+        "ko": "그거 완전 정상이야. 오늘 퇴근 후에 괜찮으면 간단하게 한번 리허설 해볼까?",
+        "pronun": "댓츠 컴플리틀리 노멀. 위 캔 두 어 퀵 런스루 애프터 워크 투데이 이프 유 원트."
       },
       {
         "speaker": "B",
-        "text": "Sure thing. Just send them over when you're ready.  I'll give you my honest opinion.",
+        "text": "That would be fantastic! Thank you so much.",
         "reading": "",
-        "ko": "그럼요. 준비되면 보내주세요. 솔직한 의견을 드릴게요.",
-        "pronun": "슈어 씽. 저스트 센드 뎀 오버 웬 유어 레디. 아일 기브 유 마이 오네스트 오피니언."
+        "ko": "정말 좋을 거야! 정말 고마워.",
+        "pronun": "댓 우드 비 판타스틱! 땡큐 소우 머치."
       },
       {
         "speaker": "A",
-        "text": "Thanks, John. I'll send them to you right after this call.",
+        "text": "No problem. We want tomorrow's meeting to go as smoothly as possible.",
         "reading": "",
-        "ko": "고마워요, 존. 이 통화 끝나자마자 바로 보내드릴게요.",
-        "pronun": "땡스, 존. 아일 센드 뎀 투 유 라이트 애프터 디스 콜."
+        "ko": "문제없어. 내일 회의가 가능한 한 순조롭게 진행되길 바라잖아.",
+        "pronun": "노우 프라블럼. 위 원트 투마로우즈 미팅 투 고우 애즈 스무틀리 애즈 파서블."
       },
       {
         "speaker": "B",
-        "text": "No problem.  Let's aim for a productive afternoon for both of us.",
+        "text": "Definitely. I'll send you the current draft so you can take a look.",
         "reading": "",
-        "ko": "문제없어요. 우리 둘 다 생산적인 오후를 보내도록 합시다.",
-        "pronun": "노 프라블럼. 레츠 에임 포 어 프로덕티브 애프터눈 포 보스 오브 어스."
-      }
-    ]
-  },
-  "en_business_daily": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "Good morning, Sarah. Did you have a productive evening yesterday?",
-        "reading": "",
-        "ko": "안녕하세요, 사라. 어제 저녁 시간 알차게 보내셨어요?",
-        "pronun": "굿모닝, 세라. 디듀 해버 프로덕티브 이브닝 예스터데이?"
-      },
-      {
-        "speaker": "B",
-        "text": "Good morning, David. I did, thank you. I managed to finalize that quarterly report.",
-        "reading": "",
-        "ko": "안녕하세요, 데이비드. 네, 그랬어요. 덕분에 분기별 보고서를 마무리할 수 있었어요.",
-        "pronun": "굿모닝, 데이비드. 아이 딧, 땡큐. 아이 매니지드 투 파이널라이즈 댓 쿼터리 리포트."
-      },
-      {
-        "speaker": "A",
-        "text": "That's excellent news. I'm still wrestling with the projections. Oh, the weather is quite pleasant today, isn't it?",
-        "reading": "",
-        "ko": "정말 잘됐네요. 저는 아직 전망을 씨름하고 있어요. 아, 오늘 날씨가 꽤 좋네요, 그렇죠?",
-        "pronun": "댓츠 엑설런트 뉴우스. 아임 스틸 레슬링 위드 더 프로젝션스. 오우, 더 웨더 이즈 콰이트 플레전트 투데이, 이즌잇?"
-      },
-      {
-        "speaker": "B",
-        "text": "It is. I was thinking of grabbing a coffee at 'The Daily Grind' on my way to the office.",
-        "reading": "",
-        "ko": "네, 그래요. 사무실 가는 길에 '더 데일리 그라인드'에서 커피 한 잔 할까 생각 중이었어요.",
-        "pronun": "잇 이즈. 아이 워스 씽킹 오브 그래빙 어 커피 앳 '더 데일리 그라인드' 온 마이 웨이 투 더 오피스."
-      },
-      {
-        "speaker": "A",
-        "text": "That sounds like a splendid idea. Perhaps I'll join you, if you don't mind. I could use a caffeine boost.",
-        "reading": "",
-        "ko": "좋은 생각이네요. 괜찮으시다면 저도 합류해도 될까요? 카페인 부스트가 좀 필요해서요.",
-        "pronun": "댓 사운즈 라이크 어 스플렌디드 아이디야. 퍼haps 아이'll 조인 유, 이프 유 돈트 마인드. 아이 쿠드 유즈 어 캐핀 부스트."
-      },
-      {
-        "speaker": "B",
-        "text": "Not at all! The more the merrier. Let's aim to leave in about ten minutes.",
-        "reading": "",
-        "ko": "전혀요! 다다익선이죠. 10분 정도 후에 출발하도록 해요.",
-        "pronun": "낫 앳 올! 더 모어 더 메리어. 렛츠 에임 투 리브 인 어바웃 텐 미닛츠."
-      },
-      {
-        "speaker": "A",
-        "text": "Perfect. I'll just tidy up my desk here. Enjoy your morning, Sarah.",
-        "reading": "",
-        "ko": "완벽해요. 저는 여기서 제 책상을 좀 정리할게요. 즐거운 아침 보내세요, 사라.",
-        "pronun": "퍼펙트. 아이'll 저스트 타이디 업 마이 데스크 히어. 엔조이 유어 모닝, 세라."
-      },
-      {
-        "speaker": "B",
-        "text": "You too, David. See you shortly.",
-        "reading": "",
-        "ko": "데이비드도요. 곧 봬요.",
-        "pronun": "유 투, 데이비드. 씨 유 셜틀리."
-      }
-    ]
-  },
-  "en_business_travel": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "Excuse me, could you please tell me where the check-in counter for Flight KE701 is?",
-        "reading": "",
-        "ko": "실례합니다만, KE701편 탑승 수속 카운터가 어디인지 알려주시겠어요?",
-        "pronun": "엑스큐즈 미, 쿠쥬 플리즈 텔 미 웨어 더 체크인 카운터 포 플라이트 KE701 이즈?"
-      },
-      {
-        "speaker": "B",
-        "text": "Certainly. The check-in counters for Korean Air are located on the second floor, to your left.",
-        "reading": "",
-        "ko": "물론입니다. 대한항공 탑승 수속 카운터는 2층, 왼쪽에 있습니다.",
-        "pronun": "서튼리. 더 체크인 카운터스 포 코리언 에어 알 로케이티드 온 더 세컨드 플로어, 투 유어 레프트."
-      },
-      {
-        "speaker": "A",
-        "text": "Thank you. And could you also direct me to the nearest business lounge?",
-        "reading": "",
-        "ko": "감사합니다. 그리고 가장 가까운 비즈니스 라운지로 가는 길도 안내해주시겠어요?",
-        "pronun": "땡큐. 앤 쿠쥬 올소 디렉트 미 투 더 니어리스트 비즈니스 라운지?"
-      },
-      {
-        "speaker": "B",
-        "text": "Certainly. The business lounge is just past the security checkpoint, on your right.",
-        "reading": "",
-        "ko": "물론입니다. 비즈니스 라운지는 보안 검색대를 지나서 바로 오른쪽에 있습니다.",
-        "pronun": "서튼리. 더 비즈니스 라운지 이즈 저스트 패스트 더 시큐리티 체크포인트, 온 유어 라이트."
-      },
-      {
-        "speaker": "A",
-        "text": "I'm looking for a hotel near the convention center. Do you have any recommendations?",
-        "reading": "",
-        "ko": "컨벤션 센터 근처 호텔을 찾고 있습니다. 추천해주실 만한 곳이 있나요?",
-        "pronun": "아임 루킹 포 어 호텔 니어 더 컨벤션 센터. 두 유 해브 애니 레커멘데이션스?"
-      },
-      {
-        "speaker": "B",
-        "text": "Yes, the Grand Imperial Hotel is a very reputable option, just a short walk away.",
-        "reading": "",
-        "ko": "네, 그랜드 임페리얼 호텔은 아주 평판이 좋은 곳이며, 걸어서 가까운 거리에 있습니다.",
-        "pronun": "예스, 더 그랜드 임페리얼 호텔 이즈 어 베리 레퓨터블 옵션, 저스트 어 숏 워크 어웨이."
-      },
-      {
-        "speaker": "A",
-        "text": "Thank you for the suggestion. Could I have a table for one, please?",
-        "reading": "",
-        "ko": "제안 감사합니다. 혼자인데 테이블 하나 주시겠어요?",
-        "pronun": "땡큐 포 더 서제스천. 쿠드 아이 해브 어 테이블 포 원, 플리즈?"
-      },
-      {
-        "speaker": "B",
-        "text": "Of course. Right this way, please. Your table is ready.",
-        "reading": "",
-        "ko": "물론입니다. 이쪽으로 오시죠. 테이블이 준비되었습니다.",
-        "pronun": "오브 코스. 라이트 디스 웨이, 플리즈. 유어 테이블 이즈 레디."
-      },
-      {
-        "speaker": "A",
-        "text": "I'd like to order the grilled salmon, and a glass of still water, please.",
-        "reading": "",
-        "ko": "구운 연어와 생수 한 잔을 주문하고 싶습니다.",
-        "pronun": "아이'드 라이크 투 오더 더 그릴드 샐몬, 앤 어 글라스 오브 스틸 워터, 플리즈."
-      },
-      {
-        "speaker": "B",
-        "text": "Excellent choice. Would you care for any appetizers or a side dish to accompany it?",
-        "reading": "",
-        "ko": "훌륭한 선택입니다. 곁들일 에피타이저나 사이드 메뉴는 필요하시겠어요?",
-        "pronun": "엑설런트 초이스. 우쥬 케어 포 애니 애퍼타이저스 오어 어 사이드 디시 투 어컴퍼니 잇?"
-      }
-    ]
-  },
-  "en_business_hobby": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "Good morning, Mr. Tanaka. How was your weekend?",
-        "reading": "おはようございます、田中さん。週末はいかがでしたか。",
-        "ko": "안녕하세요, 다나카 씨. 주말은 어떠셨나요?",
-        "pronun": "구드 모닝, 미스터 타나카. 하우 워즈 유어 위켄드?"
-      },
-      {
-        "speaker": "B",
-        "text": "Good morning, Ms. Lee. It was quite productive, thank you. I went cycling.",
-        "reading": "おはようございます、イさん。とても生産的でした、ありがとうございます。サイクリングに行きました。",
-        "ko": "안녕하세요, 이소 씨. 아주 생산적이었습니다, 감사합니다. 자전거를 탔습니다.",
-        "pronun": "구드 모닝, 미스 리. 잇 워즈 콰이트 프로덕티브, 땡큐. 아이 웬트 사이클링."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, that sounds invigorating! Where did you cycle?",
-        "reading": "おお、それは元気が出そうですね！どこをサイクリングしましたか？",
-        "ko": "오, 정말 활력이 넘치겠네요! 어디를 자전거를 타셨나요?",
-        "pronun": "오, 댓 사운즈 인비고레이팅! 웨어 디드 유 사이클?"
-      },
-      {
-        "speaker": "B",
-        "text": "I explored some scenic routes along the river. The weather was perfect for it.",
-        "reading": "川沿いの景色の良いルートをいくつか探検しました。天気もそれにぴったりでした。",
-        "ko": "강을 따라 경치 좋은 길들을 탐험했습니다. 날씨가 정말 좋았습니다.",
-        "pronun": "아이 익스플로어드 섬 시닉 루트스 얼롱 더 리버. 더 웨더 워즈 퍼펙트 포 잇."
-      },
-      {
-        "speaker": "A",
-        "text": "That's wonderful. I've been meaning to get back into cycling myself. Do you have a favorite route?",
-        "reading": "それは素晴らしいですね。私もサイクリングを再開したいと思っていました。お気に入りのルートはありますか？",
-        "ko": "멋지네요. 저도 다시 자전거를 타기 시작해야겠다고 생각하고 있었습니다. 혹시 추천하시는 코스가 있으신가요?",
-        "pronun": "댓츠 원더풀. 아이브 빈 미닝 투 겟 백 인투 사이클링 마이셀프. 두 유 해브 어 페이버릿 루트?"
-      },
-      {
-        "speaker": "B",
-        "text": "Certainly. There's a rather challenging hill climb about twenty kilometers outside the city, but the view from the top is exceptional.",
-        "reading": "もちろんです。街から20キロほど離れたところに、かなり挑戦的なヒルクライムがありますが、頂上からの眺めは格別です。",
-        "ko": "물론입니다. 시내에서 약 20킬로미터 떨어진 곳에 꽤 도전적인 언덕이 있지만, 정상에서 보는 풍경이 정말 좋습니다.",
-        "pronun": "서튼리. 데어즈 어 래더 챌린징 힐 클라임 어바웃 트웬티 킬로미터스 아웃사이드 더 시티, 벗 더 뷰 프롬 더 탑 이즈 엑셉셔널."
-      },
-      {
-        "speaker": "A",
-        "text": "A good view makes the effort worthwhile, doesn't it? Speaking of outdoors, I also went camping last month.",
-        "reading": "良い景色は努力に見合う価値がありますよね？アウトドアといえば、私も先月キャンプに行きました。",
-        "ko": "좋은 풍경은 그 노력을 가치 있게 만들죠, 그렇죠? 야외 활동에 대해 말하자면, 저도 지난달에 캠핑을 다녀왔습니다.",
-        "pronun": "어 구드 뷰 메익스 더 에퍼트 워스일, 더즌트 잇? 스피킹 오브 아웃도어스, 아이 올소 웬트 캠핑 라스트 먼스."
-      },
-      {
-        "speaker": "B",
-        "text": "Camping! How was that? I'm considering planning a camping trip soon.",
-        "reading": "キャンプ！どうでしたか？私も近いうちにキャンプ旅行を計画しようかと考えています。",
-        "ko": "캠핑이요! 어떠셨어요? 저도 조만간 캠핑 여행을 계획해 볼까 생각 중입니다.",
-        "pronun": "캠핑! 하우 워즈 댓? 아임 컨시더링 플래닝 어 캠핑 트립 순."
-      },
-      {
-        "speaker": "A",
-        "text": "It was incredibly relaxing. I found a lovely campsite by a lake, very peaceful.",
-        "reading": "信じられないほどリラックスできました。湖畔の素敵なキャンプ場を見つけ、とても静かでした。",
-        "ko": "정말 편안했습니다. 호숫가에 있는 멋진 캠핑장을 찾았는데, 아주 평화로웠습니다.",
-        "pronun": "잇 워즈 인크레더블리 릴랙싱. 아이 파운드 어 러블리 캠프사이트 바이 어 레이크, 베리 피스풀."
-      },
-      {
-        "speaker": "B",
-        "text": "That sounds ideal. I appreciate being disconnected from the city bustle.",
-        "reading": "理想的ですね。都会の喧騒から離れて過ごすのが好きです。",
-        "ko": "이상적이네요. 도시의 번잡함에서 벗어나 있는 것이 정말 좋습니다.",
-        "pronun": "댓 사운즈 아이디얼. 아이 어프리시에잇 빙 디스커넥티드 프롬 더 시티 버슬."
-      }
-    ]
-  },
-  "en_business_work": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "Good morning, everyone. Let's begin this quarterly review meeting.",
-        "reading": "",
-        "ko": "여러분, 좋은 아침입니다. 이번 분기 검토 회의를 시작하겠습니다.",
-        "pronun": "구 무닝, 에브리원. 렛츠 비긴 디스 쿼털리 리뷰 미링."
-      },
-      {
-        "speaker": "B",
-        "text": "Thank you for convening us. I'm looking forward to hearing the departmental updates.",
-        "reading": "",
-        "ko": "소집해 주셔서 감사합니다. 부서별 업데이트를 들을 수 있기를 기대하고 있습니다.",
-        "pronun": "떵큐 훠 컨비닝 어스. 아임 루킹 훠워드 투 히어링 더 디파트먼털 업데이트."
-      },
-      {
-        "speaker": "A",
-        "text": "Firstly, let's address the Q3 performance metrics. Any preliminary feedback?",
-        "reading": "",
-        "ko": "먼저, 3분기 실적 지표에 대해 논의해 봅시다. 예비 피드백 있으신가요?",
-        "pronun": "퍼스트리, 렛츠 어드레스 더 큐 쓰리 퍼포먼스 메트릭스. 애니 프리리미너리 피드백?"
-      },
-      {
-        "speaker": "B",
-        "text": "Certainly. I believe the projections are ambitious, but achievable with strategic adjustments.",
-        "reading": "",
-        "ko": "물론입니다. 전망이 야심 차지만, 전략적 조정으로 달성 가능하다고 생각합니다.",
-        "pronun": "설튼리. 아이 빌리브 더 프로젝션스 아 앰비셔스, 벗 어치버블 위드 스트라테직 어저스트먼츠."
-      },
-      {
-        "speaker": "A",
-        "text": "That's a valid point. We should also consider the upcoming product launch during our discussion.",
-        "reading": "",
-        "ko": "그것은 타당한 지적입니다. 토론 중에 다가오는 신제품 출시도 고려해야 합니다.",
-        "pronun": "댓츠 어 밸리드 포인트. 위 슛 올소 컨시더 더 어커밍 프로덕트 론칭 듀어링 아워 디스커션."
-      },
-      {
-        "speaker": "B",
-        "text": "Agreed. I've prepared a concise presentation on market penetration strategies for the new release.",
-        "reading": "",
-        "ko": "동의합니다. 신제품 출시에 대한 시장 침투 전략에 대한 간결한 발표를 준비했습니다.",
-        "pronun": "어그리드. 아이브 프리페어드 어 컨사이즈 프레젠테이션 온 마켓 페네트레이션 스트라테지스 훠 더 뉴 릴리즈."
-      },
-      {
-        "speaker": "A",
-        "text": "Excellent. Please proceed after we've finalized the Q3 review.",
-        "reading": "",
-        "ko": "훌륭합니다. 3분기 검토를 마무리한 후에 진행해 주세요.",
-        "pronun": "엑설런트. 플리즈 프로시드 애프터 위브 파이널라이즈드 더 큐 쓰리 리뷰."
-      },
-      {
-        "speaker": "B",
-        "text": "Understood. I'll ensure my presentation is aligned with the overall objectives.",
-        "reading": "",
-        "ko": "알겠습니다. 제 발표가 전반적인 목표와 일치하도록 하겠습니다.",
-        "pronun": "언더스투드. 아윌 인슈어 마이 프레젠테이션 이즈 얼라인드 위드 더 오버럴 오브젝티브스."
+        "ko": "당연하지. 현재 초안을 보내줄게, 한번 볼 수 있도록.",
+        "pronun": "데피니틀리. 아이'll 샌드 유 더 커런트 드라프트 소우 유 캔 테이크 어 룩."
       }
     ]
   },
@@ -1095,28 +755,42 @@
         "reading": "ちょうしょく",
         "ko": "아침 식사",
         "pronun": "쵸-쇼쿠",
-        "example": "朝食はパンを食べました。"
+        "example": "朝食を食べる時間がない。"
       },
       {
-        "word": "顔を洗う",
-        "reading": "かおをあら",
-        "ko": "세수하다",
-        "pronun": "카오오 아라",
-        "example": "朝起きたら、まず顔を洗います。"
+        "word": "洗顔",
+        "reading": "せんがん",
+        "ko": "세수",
+        "pronun": "센-간",
+        "example": "朝、洗顔をします。"
+      },
+      {
+        "word": "歯磨き",
+        "reading": "はみがき",
+        "ko": "양치질",
+        "pronun": "하미가키",
+        "example": "歯磨き粉はどこですか？"
       },
       {
         "word": "着替える",
         "reading": "きがえる",
         "ko": "갈아입다",
         "pronun": "키가에루",
-        "example": "学校に行く前に着替えます。"
+        "example": "服を着替えます。"
       },
       {
         "word": "カフェ",
         "reading": "かふぇ",
         "ko": "카페",
         "pronun": "카훼",
-        "example": "友達とカフェで会いました。"
+        "example": "カフェで友達と会った。"
+      },
+      {
+        "word": "注文",
+        "reading": "ちゅうもん",
+        "ko": "주문",
+        "pronun": "츄-몬",
+        "example": "コーヒーを注文しました。"
       },
       {
         "word": "天気",
@@ -1131,20 +805,6 @@
         "ko": "맑음",
         "pronun": "하레",
         "example": "明日は晴れるでしょう。"
-      },
-      {
-        "word": "雨",
-        "reading": "あめ",
-        "ko": "비",
-        "pronun": "아메",
-        "example": "傘を持っていきましょう、雨が降っています。"
-      },
-      {
-        "word": "服",
-        "reading": "ふく",
-        "ko": "옷",
-        "pronun": "후쿠",
-        "example": "新しい服を買いました。"
       }
     ]
   },
@@ -1156,7 +816,7 @@
         "reading": "ほてる",
         "ko": "호텔",
         "pronun": "호테루",
-        "example": "ホテルでチェックインします。"
+        "example": "ホテルを予約しました。"
       },
       {
         "word": "空港",
@@ -1201,11 +861,11 @@
         "example": "料理を注文します。"
       },
       {
-        "word": "メニュー",
-        "reading": "めにゅー",
-        "ko": "메뉴",
-        "pronun": "메뉴-",
-        "example": "メニューを見せてください。"
+        "word": "お会計",
+        "reading": "おかいけい",
+        "ko": "계산",
+        "pronun": "오카이케이",
+        "example": "お会計をお願いします。"
       }
     ]
   },
@@ -1217,56 +877,192 @@
         "reading": "さいくりんぐ",
         "ko": "사이클링",
         "pronun": "사이클링",
-        "example": "週末にサイクリングをします。"
+        "example": "週末はサイクリングをします。"
       },
       {
         "word": "キャンプ",
         "reading": "きゃんぷ",
         "ko": "캠핑",
         "pronun": "캰푸",
-        "example": "家族でキャンプに行きたいです。"
+        "example": "夏にキャンプに行く予定です。"
       },
       {
         "word": "ハイキング",
         "reading": "はいきんぐ",
         "ko": "하이킹",
-        "pronun": "하이킹",
+        "pronun": "하이킹구",
         "example": "山でハイキングを楽しみました。"
       },
       {
         "word": "登山",
         "reading": "とざん",
         "ko": "등산",
-        "pronun": "토잔",
-        "example": "新しい山に登山に挑戦しました。"
+        "pronun": "도잔",
+        "example": "新しい山に登山したいです。"
       },
       {
         "word": "釣り",
         "reading": "つり",
         "ko": "낚시",
         "pronun": "츠리",
-        "example": "川で釣りをしました。"
+        "example": "川で釣りをしています。"
       },
       {
         "word": "アウトドア",
         "reading": "あうとどあ",
         "ko": "아웃도어",
-        "pronun": "아웃도아",
+        "pronun": "아우토도아",
         "example": "アウトドア活動が好きです。"
       },
       {
-        "word": "散歩",
-        "reading": "さんぽ",
-        "ko": "산책",
-        "pronun": "삼포",
-        "example": "公園を散歩するのが好きです。"
+        "word": "旅行",
+        "reading": "りょこう",
+        "ko": "여행",
+        "pronun": "료코",
+        "example": "来月、旅行に行きます。"
       },
       {
-        "word": "ジョギング",
-        "reading": "じょぎんぐ",
-        "ko": "조깅",
-        "pronun": "죠깅구",
-        "example": "毎朝ジョギングをしています。"
+        "word": "写真",
+        "reading": "しゃしん",
+        "ko": "사진",
+        "pronun": "샤신",
+        "example": "旅行でたくさんの写真を撮りました。"
+      }
+    ]
+  },
+  "ja_word_work": {
+    "type": "word",
+    "items": [
+      {
+        "word": "会議",
+        "reading": "かいぎ",
+        "ko": "회의",
+        "pronun": "카이기",
+        "example": "会議は午後3時に始まります。"
+      },
+      {
+        "word": "報告",
+        "reading": "ほうこく",
+        "ko": "보고",
+        "pronun": "호-코쿠",
+        "example": "進捗状況を報告してください。"
+      },
+      {
+        "word": "資料",
+        "reading": "しりょう",
+        "ko": "자료",
+        "pronun": "시료-",
+        "example": "会議の資料を配布します。"
+      },
+      {
+        "word": "評価",
+        "reading": "ひょうか",
+        "ko": "평가",
+        "pronun": "효-카",
+        "example": "上司から評価を受けました。"
+      },
+      {
+        "word": "提案",
+        "reading": "ていあん",
+        "ko": "제안",
+        "pronun": "테-안",
+        "example": "新しい企画を提案します。"
+      },
+      {
+        "word": "決定",
+        "reading": "けってい",
+        "ko": "결정",
+        "pronun": "켓테-이",
+        "example": "会議で最終決定をします。"
+      },
+      {
+        "word": "意見",
+        "reading": "いけん",
+        "ko": "의견",
+        "pronun": "이켄",
+        "example": "皆さんの意見を聞かせてください。"
+      },
+      {
+        "word": "時間",
+        "reading": "じかん",
+        "ko": "시간",
+        "pronun": "지칸",
+        "example": "会議の時間を変更します。"
+      }
+    ]
+  },
+  "ja_beginner_hobby": {
+    "type": "script",
+    "lines": [
+      {
+        "speaker": "A",
+        "text": "こんにちは。",
+        "reading": "こんにちは。",
+        "ko": "안녕하세요.",
+        "pronun": "콘니치와"
+      },
+      {
+        "speaker": "B",
+        "text": "こんにちは。お元気ですか。",
+        "reading": "こんにちは。おげんきですか。",
+        "ko": "안녕하세요. 잘 지내세요?",
+        "pronun": "콘니치와 오겡키데스까"
+      },
+      {
+        "speaker": "A",
+        "text": "はい、元気です。あなたは？",
+        "reading": "はい、げんきです。あなたは？",
+        "ko": "네, 잘 지내요. 당신은요?",
+        "pronun": "하이 겡키데스 아나타와"
+      },
+      {
+        "speaker": "B",
+        "text": "私も元気です。",
+        "reading": "わたしもげんきです。",
+        "ko": "저도 잘 지내요.",
+        "pronun": "와타시모 겡키데스"
+      },
+      {
+        "speaker": "A",
+        "text": "趣味は何ですか。",
+        "reading": "しゅみはなんですか。",
+        "ko": "취미가 무엇인가요?",
+        "pronun": "슈미와 난데스까"
+      },
+      {
+        "speaker": "B",
+        "text": "自転車に乗ることです。",
+        "reading": "じてんしゃにのることです。",
+        "ko": "자전거 타는 것입니다.",
+        "pronun": "지텐샤니 노루코토데스"
+      },
+      {
+        "speaker": "A",
+        "text": "いいですね。私もキャンプが好きです。",
+        "reading": "いいですね。わたしもキャンプがすきです。",
+        "ko": "좋네요. 저도 캠핑을 좋아해요.",
+        "pronun": "이이데스네 와타시모 캰푸가 스키데스"
+      },
+      {
+        "speaker": "B",
+        "text": "キャンプは楽しいですよね。",
+        "reading": "キャンプはたのしいですよね。",
+        "ko": "캠핑은 즐겁죠.",
+        "pronun": "캰푸와 타노시이데스요네"
+      },
+      {
+        "speaker": "A",
+        "text": "はい、自然が好きです。",
+        "reading": "はい、しぜんがすきです。",
+        "ko": "네, 자연을 좋아해요.",
+        "pronun": "하이 시젠가 스키데스"
+      },
+      {
+        "speaker": "B",
+        "text": "週末は何をしますか。",
+        "reading": "しゅうまつはなにをしますか。",
+        "ko": "주말에 무엇을 하세요?",
+        "pronun": "슈마츠와 나니오 시마스까"
       }
     ]
   },
@@ -1278,131 +1074,131 @@
         "text": "おはようございます。",
         "reading": "おはようございます。",
         "ko": "안녕하세요.",
-        "pronun": "오하요-고자이마스"
+        "pronun": "오하요- 고자이마스"
       },
       {
         "speaker": "B",
-        "text": "おはようございます。会議はもう始まりますか？",
-        "reading": "おはようございます。かいぎはもうはじまりますか？",
-        "ko": "안녕하세요. 회의는 곧 시작하나요?",
-        "pronun": "오하요-고자이마스. 카이기와 모- 하지마리마스카?"
+        "text": "おはようございます。",
+        "reading": "おはようございます。",
+        "ko": "안녕하세요.",
+        "pronun": "오하요- 고자이마스"
       },
       {
         "speaker": "A",
-        "text": "はい、すぐ始まります。資料を準備しましたか？",
-        "reading": "はい、すぐはじまります。しりょうをじゅんびしましたか？",
-        "ko": "네, 곧 시작합니다. 자료 준비하셨나요?",
-        "pronun": "하이, 스구 하지마리마스. 시료-오 준비 시마시타카?"
+        "text": "会議はもうすぐ始まります。",
+        "reading": "かいぎはもうすぐはじまります。",
+        "ko": "회의는 곧 시작됩니다.",
+        "pronun": "카이기와 모-스구 하지마리마스"
       },
       {
         "speaker": "B",
-        "text": "はい、準備しました。プレゼンは大丈夫です。",
-        "reading": "はい、じゅんびしました。プレゼンはだいじょうぶです。",
-        "ko": "네, 준비했습니다. 발표는 괜찮습니다.",
-        "pronun": "하이, 준비 시마시타. 프레젠와 다이죠-부데스"
+        "text": "はい、資料はありますか。",
+        "reading": "はい、しりょうはありますか。",
+        "ko": "네, 자료는 있나요?",
+        "pronun": "하이, 시료-와 아리마스카"
       },
       {
         "speaker": "A",
-        "text": "それは良かったです。フィードバックはもうしましたか？",
-        "reading": "それはよかった。フィードバックはもうしましたか？",
-        "ko": "잘 됐네요. 피드백은 이미 했나요?",
-        "pronun": "소레와 요캇타데스. 피-도밧쿠와 모- 시마시타카?"
+        "text": "はい、ここにあります。",
+        "reading": "はい、ここにあります。",
+        "ko": "네, 여기 있습니다.",
+        "pronun": "하이, 코코니 아리마스"
       },
       {
         "speaker": "B",
-        "text": "いいえ、まだです。後でします。",
-        "reading": "いいえ、まだです。あとでします。",
-        "ko": "아니요, 아직요. 나중에 하겠습니다.",
-        "pronun": "이-에, 마다데스. 아토데 시마스"
+        "text": "このプレゼンは素晴らしいですね。",
+        "reading": "このプレゼンはすばらしいですね。",
+        "ko": "이 프레젠테이션은 훌륭하네요.",
+        "pronun": "코노 프레젠-와 스바라시-데스네"
       },
       {
         "speaker": "A",
-        "text": "わかりました。会議が終わったら、話しましょう。",
-        "reading": "わかりました。かいぎがおわったら、はなしましょう。",
-        "ko": "알겠습니다. 회의가 끝나면 이야기해요.",
-        "pronun": "와카리마시타. 카이기가 오왓타라, 하나시마쇼-"
+        "text": "ありがとうございます。フィードバックをください。",
+        "reading": "ありがとうございます。フィードバックをください。",
+        "ko": "감사합니다. 피드백을 주세요.",
+        "pronun": "아리가토- 고자이마스. 피-도밧쿠오 쿠다사이"
       },
       {
         "speaker": "B",
-        "text": "はい、そうしましょう。",
-        "reading": "はい、そうしましょう。",
-        "ko": "네, 그렇게 해요.",
-        "pronun": "하이, 소- 시마쇼-"
+        "text": "はい、後で伝えます。",
+        "reading": "はい、あとでつたえます。",
+        "ko": "네, 나중에 전달하겠습니다.",
+        "pronun": "하이, 아토데 츠타에마스"
       }
     ]
   },
-  "ja_daily_travel": {
+  "ja_daily_daily": {
     "type": "script",
     "lines": [
       {
         "speaker": "A",
-        "text": "すみません、このホテルにチェックインしたいんですが。",
-        "reading": "すみません、このホテルにチェックインしたいんですが。",
-        "ko": "실례합니다, 이 호텔에 체크인하고 싶은데요.",
-        "pronun": "스미마셍, 코노 호테루니 쳬크인 시타인데스가."
+        "text": "おはようございます！",
+        "reading": "おはようございます！",
+        "ko": "안녕하세요!",
+        "pronun": "오하요-고자이마스!"
       },
       {
         "speaker": "B",
-        "text": "はい、承知いたしました。ご予約のお名前は？",
-        "reading": "はい、しょうちいたしました。ごよやくのおなまえは？",
-        "ko": "네, 알겠습니다. 예약하신 성함이 어떻게 되시죠?",
-        "pronun": "하이, 쇼-치 이타시마시타. 고요야쿠노 오나마에와?"
+        "text": "あ、おはようございます。今日はいい天気ですね。",
+        "reading": "あ、おはようございます。きょうはいい てんきですね。",
+        "ko": "아, 안녕하세요. 오늘은 날씨가 좋네요.",
+        "pronun": "아, 오하요-고자이마스. 쿄-와 이-이 텐키데스네."
       },
       {
         "speaker": "A",
-        "text": "キム・スジンです。予約しています。",
-        "reading": "キム・スジンです。よやくしています。",
-        "ko": "김수진입니다. 예약했어요.",
-        "pronun": "키무 스진데스. 요야쿠 시테이마스."
+        "text": "本当ですね。朝ごはん、もう食べましたか？",
+        "reading": "ほんとうですね。あさごはん、もうたべましたか？",
+        "ko": "정말이네요. 아침 식사는 이미 하셨어요?",
+        "pronun": "혼토-데스네. 아사고항, 모- 타베마시타카?"
       },
       {
         "speaker": "B",
-        "text": "かしこまりました。こちらにサインをお願いします。",
-        "reading": "かしこまりました。こちらにサインをおねがいします。",
-        "ko": "알겠습니다. 여기에 서명 부탁드립니다.",
-        "pronun": "카시코마리마시타. 코치라니 사이은 오네가이시마스."
+        "text": "はい、食べました。パンとコーヒーです。",
+        "reading": "はい、たべました。パンとコーヒーです。",
+        "ko": "네, 먹었어요. 빵이랑 커피요.",
+        "pronun": "하이, 타베마시타. 팡토 코-히-데스."
       },
       {
         "speaker": "A",
-        "text": "空港からホテルまで、一番近い交通手段は何ですか？",
-        "reading": "くうこうからホテルまで、いちばんちかいこうつうしゅだんはなんですか？",
-        "ko": "공항에서 호텔까지 가장 가까운 교통수단은 무엇인가요?",
-        "pronun": "쿠-코-까라 호테루마데, 이치방 치카이 코-츠-슈-단와 난데스까?"
+        "text": "いいですね。私はいつもご飯とお味噌汁ですよ。",
+        "reading": "いいですね。わたしはいつもごはんとおみそしるですよ。",
+        "ko": "좋네요. 저는 늘 밥이랑 된장국이에요.",
+        "pronun": "이-데스네. 와타시와 이츠모 고항토 오미소시루데스요."
       },
       {
         "speaker": "B",
-        "text": "タクシーが一番早いです。バスもありますよ。",
-        "reading": "タクシーがいちばんはやいです。バスもありますよ。",
-        "ko": "택시가 가장 빨라요. 버스도 있습니다.",
-        "pronun": "타쿠시-가 이치방 하야이데스. 바스모 아리마스요."
+        "text": "へえ、健康的ですね。",
+        "reading": "へえ、けんこうてきですね。",
+        "ko": "헤에, 건강하네요.",
+        "pronun": "헤-, 켄코-테키데스네."
       },
       {
         "speaker": "A",
-        "text": "このレストランのおすすめは何ですか？",
-        "reading": "このレストランのおすすめはなんですか？",
-        "ko": "이 식당의 추천 메뉴는 무엇인가요?",
-        "pronun": "코노 레스토랑노 오스스메와 난데스까?"
+        "text": "そうかな。ところで、午後、カフェに行きませんか？",
+        "reading": "そうかな。ところで、ごご、カフェにいきませんか？",
+        "ko": "그럴까요? 그런데 오후에 카페에 가지 않을래요?",
+        "pronun": "소-카나. 토코로데, 고고, 카페니 이키마센카?"
       },
       {
         "speaker": "B",
-        "text": "やはり、ここの名物である牛丼が一番人気です。",
-        "reading": "やはり、ここのめいぶつであるぎゅうどんがいちばんにんきです。",
-        "ko": "역시, 이곳의 명물인 규동이 가장 인기 있습니다.",
-        "pronun": "야하리, 코코노 메이부츠데아루 귯동가 이치방 닌키데스."
+        "text": "いいですね！ぜひ行きたいです。",
+        "reading": "いいですね！ぜひいきたいです。",
+        "ko": "좋아요! 꼭 가고 싶어요.",
+        "pronun": "이-데스네! 제히 이키타이데스."
       },
       {
         "speaker": "A",
-        "text": "じゃあ、牛丼を一つお願いします。",
-        "reading": "じゃあ、ぎゅうどんをひとつおねがいします。",
-        "ko": "그럼, 규동 하나 부탁합니다.",
-        "pronun": "쟈-, 귯동오 히토츠 오네가이시마스."
+        "text": "じゃあ、２時頃に駅で会いましょう。",
+        "reading": "じゃあ、２じごろにえきであいましょう。",
+        "ko": "그럼, 2시쯤 역에서 만나요.",
+        "pronun": "쟈-, 니지 고로니 에키데 아이마쇼-."
       },
       {
         "speaker": "B",
-        "text": "はい、かしこまりました。少々お待ちください。",
-        "reading": "はい、かしこまりました。しょうしょうおまちください。",
-        "ko": "네, 알겠습니다. 잠시만 기다려 주세요.",
-        "pronun": "하이, 카시코마리마시타. 쇼-쇼- 오마치 쿠다사이."
+        "text": "はい、楽しみにしています。",
+        "reading": "はい、たのしみにしています。",
+        "ko": "네, 기대하고 있을게요.",
+        "pronun": "하이, 타노시미니 시테이마스."
       }
     ]
   },
@@ -1411,202 +1207,249 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "最近、何か新しい趣味は始めた？",
-        "reading": "さいきん、なにか あたらしい しゅみは はじめた？",
-        "ko": "최근에 뭔가 새로운 취미 시작했어?",
-        "pronun": "사이킨, 나니카 아타라시이 슈미와 하지메타?"
+        "text": "最近、何か新しい趣味とか始めた？",
+        "reading": "さいきん、なにかあたらしいしゅみとかはじめた？",
+        "ko": "최근에 뭔가 새로운 취미라도 시작했어?",
+        "pronun": "사이킨, 나니카 아타라시이 슈미토카 하지메타?"
       },
       {
         "speaker": "B",
-        "text": "うん、週末にサイクリングを始めたんだ。すごく楽しいよ。",
-        "reading": "うん、しゅうまつに サイクリングを はじめたんだ。すごく たのしいよ。",
-        "ko": "응, 주말에 사이클링을 시작했어. 정말 재밌어.",
-        "pronun": "웅, 슈마츠니 사이쿠링구오 하지메탄다. 스고쿠 타노시이요."
+        "text": "うん、実は最近サイクリングにハマってるんだ。",
+        "reading": "うん、じつはさいきんサイクリングにはまってるんだ。",
+        "ko": "응, 실은 최근에 사이클링에 푹 빠졌어.",
+        "pronun": "운, 지츠와 사이킹니 함맛테룬다."
       },
       {
         "speaker": "A",
-        "text": "へえ、いいなあ。私も昔、自転車に乗ってたけど、最近は全然乗ってないな。",
-        "reading": "へえ、いいなあ。わたしも むかし、じてんしゃに のってたけど、さいきんは ぜんぜん のってないな。",
-        "ko": "우와, 좋겠다. 나도 옛날에 자전거 탔었는데, 요즘엔 전혀 안 타고 있네.",
-        "pronun": "헤에, 이이나. 와타시모 무카시, 지텐샤니 놋테타케도, 사이킨와 젠젠 놋테나이나."
+        "text": "へえ、いいじゃん！ どこらへんを走るの？",
+        "reading": "へえ、いいじゃん！ どこらへんをはしるの？",
+        "ko": "와, 좋다! 어디쯤 달려?",
+        "pronun": "헤에, 이이쟝! 도코라헨오 하시루노?"
       },
       {
         "speaker": "B",
-        "text": "じゃあ、今度一緒にどう？ 体にもいいし、気分転換にもなるよ。",
-        "reading": "じゃあ、こんど いっしょに どう？ からだにも いいし、きぶんてんかんに もなるよ。",
-        "ko": "그럼, 다음번에 같이 갈래? 몸에도 좋고, 기분 전환도 될 거야.",
-        "pronun": "쟈아, 콘도 잇쇼니 도오? 카라다니모 이이시, 키분텐칸니모 나루요."
+        "text": "週末はよく河川敷とか、景色のいい公園とか。",
+        "reading": "しゅうまつはよくかせんじきとか、けしきのいいこうえんとか。",
+        "ko": "주말에는 자주 강변이나 경치 좋은 공원 같은 곳.",
+        "pronun": "슈우마츠와 요쿠 카센지키토카, 케시키노 이이 코우엔토카."
       },
       {
         "speaker": "A",
-        "text": "いいね！ どこらへんを走るの？",
-        "reading": "いいね！ どこらへんを はしるの？",
-        "ko": "좋아! 어디쯤을 달려?",
-        "pronun": "이이네! 도코라헨오 하시루노?"
+        "text": "自然の中を走るのは気持ちいいね。",
+        "reading": "しぜんのなかをはしるのはきもちいいね。",
+        "ko": "자연 속을 달리는 건 기분이 좋지.",
+        "pronun": "시젠노 나카오 하시루노와 키모치이이네."
       },
       {
         "speaker": "B",
-        "text": "公園とか、川沿いを走ることが多いかな。景色がすごく綺麗だよ。",
-        "reading": "こうえんとか、かわぞいを はしることが おおいかな。けしきが すごく きれいだよ。",
-        "ko": "공원이라든지, 강변을 달릴 때가 많아. 경치가 정말 예뻐.",
-        "pronun": "코오엔토카, 카와조이오 하시루코토가 오오이카나. 케시키가 스고쿠 키레이다요."
+        "text": "そうなんだ。あと、キャンプも少し興味があって。",
+        "reading": "そうなんだ。あと、キャンプもすこしきょうみがあって。",
+        "ko": "그렇지. 그리고 캠핑에도 조금 관심이 있어.",
+        "pronun": "소우난다. 아토, 챰푸모 스코시 쿄오미가 앗테."
       },
       {
         "speaker": "A",
-        "text": "聞いているだけで楽しそう！",
-        "reading": "きいているだけで たのしそう！",
-        "ko": "듣기만 해도 재밌어 보여!",
-        "pronun": "키이테이루다케데 타노시소오!"
+        "text": "キャンプ！ いいね！ 最近アウトドア人気だもんね。",
+        "reading": "キャンプ！ いいね！ さいきんアウトドアにんきだもんね。",
+        "ko": "캠핑! 좋다! 요즘 아웃도어 인기 많잖아.",
+        "pronun": "챰푸! 이이네! 사이킨 아웃도아 닌키다몬네."
       },
       {
         "speaker": "B",
-        "text": " campingも好きで、週末はよく行くんだ。",
-        "reading": "キャンピングも すきで、しゅうまつは よく いくんだ。",
-        "ko": "캠핑도 좋아해서, 주말엔 자주 가.",
-        "pronun": "캰핑구모 스키데, 슈마츠와 요쿠 이쿤다."
+        "text": "いつか自転車でキャンプ場まで行ってみたいな。",
+        "reading": "いつかじてんしゃでキャンプじょうまでいってみたいな。",
+        "ko": "언젠가 자전거로 캠핑장까지 가보고 싶어.",
+        "pronun": "이츠카 지텐샤데 챰푸죠오마데 잇테미타이나."
       },
       {
         "speaker": "A",
-        "text": "わあ、アウトドア派なんだね！",
-        "reading": "わあ、アウトドアはなんだね！",
-        "ko": "와, 아웃도어파네!",
-        "pronun": "와아, 아웃도아한난다네!"
-      },
-      {
-        "speaker": "B",
-        "text": "うん、自然の中で過ごすのが一番リフレッシュできるんだ。",
-        "reading": "うん、しぜんの なかで すごすのが いちばん リフレッシュできるんだ。",
-        "ko": "응, 자연 속에서 지내는 게 가장 리프레시 돼.",
-        "pronun": "웅, 시젠노 나카데 스고스노가 이치방 리후렛슈 데키룬다."
+        "text": "それはすごい！ 応援してるよ。",
+        "reading": "それはすごい！ おうえんしてるよ。",
+        "ko": "그건 대단하다! 응원할게.",
+        "pronun": "소레와 스고이! 오우엔 시테루요."
       }
     ]
   },
-  "zh_word_travel": {
-    "type": "word",
-    "items": [
-      {
-        "word": "酒店",
-        "reading": "jiǔdiàn",
-        "ko": "호텔",
-        "pronun": "지우디엔",
-        "example": "我要预订一个酒店。"
-      },
-      {
-        "word": "机场",
-        "reading": "jīchǎng",
-        "ko": "공항",
-        "pronun": "지창",
-        "example": "飞机在机场起飞。"
-      },
-      {
-        "word": "问路",
-        "reading": "wènlù",
-        "ko": "길 묻기",
-        "pronun": "원루",
-        "example": "不好意思，我想问路。"
-      },
-      {
-        "word": "左转",
-        "reading": "zuǒzhuǎn",
-        "ko": "좌회전",
-        "pronun": "쭈오쫜",
-        "example": "请在下一个路口左转。"
-      },
-      {
-        "word": "右转",
-        "reading": "yòuzhuǎn",
-        "ko": "우회전",
-        "pronun": "요우쫜",
-        "example": "然后右转就到了。"
-      },
-      {
-        "word": "直走",
-        "reading": "zhízǒu",
-        "ko": "직진",
-        "pronun": "즈저우",
-        "example": "一直直走，不要拐弯。"
-      },
-      {
-        "word": "点菜",
-        "reading": "diǎncài",
-        "ko": "주문하기",
-        "pronun": "디엔차이",
-        "example": "我们可以点菜了吗？"
-      },
-      {
-        "word": "菜单",
-        "reading": "càidān",
-        "ko": "메뉴",
-        "pronun": "차이단",
-        "example": "请给我一份菜单。"
-      }
-    ]
-  },
-  "zh_beginner_travel": {
+  "ja_business_hobby": {
     "type": "script",
     "lines": [
       {
         "speaker": "A",
-        "text": "你好！",
-        "reading": "nǐ hǎo!",
-        "ko": "안녕하세요!",
-        "pronun": "니 하오!"
+        "text": "田中さん、週末はいつも何をされていますか？",
+        "reading": "たなかさん、しゅうまつはいつもなにをされていますか？",
+        "ko": "다나카 씨, 주말에는 항상 무엇을 하세요?",
+        "pronun": "타나카상, 슈우마츠와 이츠모 나니오 사레테이마스까?"
       },
       {
         "speaker": "B",
-        "text": "你好！我要一个房间。",
-        "reading": "nǐ hǎo! wǒ yào yī gè fángjiān.",
-        "ko": "안녕하세요! 방 하나 주세요.",
-        "pronun": "니 하오! 워 야오 이 거 팡지엔."
+        "text": "最近はまっているのは、サイクリングですね。長距離を走るのが好きなんです。",
+        "reading": "さいきんはまっているのは、さいrespectivelyくらむです。ちょうきょりをはしるのがすきなんです。",
+        "ko": "요즘 빠져 있는 것은 사이클링입니다. 장거리를 달리는 것을 좋아해요.",
+        "pronun": "사이킹와 하맛테이루노와, 사이클링 데스네. 쵸우쿄리 오하시루노가 스키난데스."
       },
       {
         "speaker": "A",
-        "text": "好的。这是你的钥匙。",
-        "reading": "hǎo de. zhè shì nǐ de yàoshi.",
-        "ko": "네. 여기 당신의 열쇠입니다.",
-        "pronun": "하오 더. 제 쉬 니 더 야오시."
+        "text": "それは素晴らしいですね！風光明媚な場所を走ったりしますか？",
+        "reading": "それはすばらしいですね！ふうこうめいびなばしょをはしったりしますか？",
+        "ko": "정말 멋지네요! 경치 좋은 곳을 달리기도 하시나요?",
+        "pronun": "소레와 스바라시이데스네! 후우코우메이비나 바쇼오 하시타리 시마스까?"
       },
       {
         "speaker": "B",
-        "text": "谢谢！请问，去机场怎么走？",
-        "reading": "xièxie! qǐngwèn, qù jīchǎng zěnme zǒu?",
-        "ko": "감사합니다! 실례합니다, 공항에 어떻게 가나요?",
-        "pronun": "시에시에! 칭원, 취 지창 전머 조우?"
+        "text": "ええ、週末にはよく河川敷や山道を走っています。",
+        "reading": "ええ、しゅうまつにはよくかせんじきややまみちをはしっています。",
+        "ko": "네, 주말에는 자주 강변이나 산길을 달려요.",
+        "pronun": "에에, 슈우마츠니와 요쿠 카센지키야 야마미치오 하싯테이마스."
       },
       {
         "speaker": "A",
-        "text": "坐出租车，很快。",
-        "reading": "zuò chūzūchē, hěn kuài.",
-        "ko": "택시 타면 빨리 갑니다.",
-        "pronun": "쭈오 추주처, 헌 콰이."
+        "text": "アクティブでいらっしゃるんですね。私はどちらかというと、キャンプやハイキングのようなアウトドア活動の方が好きです。",
+        "reading": "あくてぃぶでいらっしゃるんですね。わたしはどちらかというと、きゃんぷやはいきんぐのようなあうとどあかつどうのほうがすきです。",
+        "ko": "정말 활동적이시네요. 저는 오히려 캠핑이나 하이킹 같은 아웃도어 활동을 더 좋아합니다.",
+        "pronun": "아쿠티브데 잇샤루은데스네. 와타시와 도치라카토이우토, 캰푸야 하이킹노 요우나 아우토도아 카츠도오노 호우가 스키데스."
       },
       {
         "speaker": "B",
-        "text": "好的。我想点餐。",
-        "reading": "hǎo de. wǒ xiǎng diǎncān.",
-        "ko": "네. 주문하고 싶습니다.",
-        "pronun": "하오 더. 워 시앙 띠엔찬."
+        "text": "キャンプもいいですよね。自然の中で過ごすのはリフレッシュになります。",
+        "reading": "きゃんぷもいいですよね。しぜんのなかですごすのはりふれっしゅになります。",
+        "ko": "캠핑도 좋죠. 자연 속에서 보내는 것은 기분 전환이 됩니다.",
+        "pronun": "캰푸모 이이데스요네. 시젠노 나카데 스고스노와 리후렛슈니 나리마스."
       },
       {
         "speaker": "A",
-        "text": "你想要吃什么？",
-        "reading": "nǐ xiǎng yào chī shénme?",
-        "ko": "무엇을 드시겠어요?",
-        "pronun": "니 시앙 야오 츠 션머?"
+        "text": "ええ、特に最近は、星空の綺麗なキャンプ場を探して出かけることが多いです。",
+        "reading": "ええ、とくにさいきんは、ほしぞらのきれいなきゃんぷじょうをさがしてでかけることが多いです。",
+        "ko": "네, 특히 요즘은 별이 아름다운 캠핑장을 찾아 나서는 경우가 많습니다.",
+        "pronun": "에에, 토쿠니 사이킹와, 호시조라노 키레이나 캰푸죠오 사가시테 데카케루 코토가 오오이데스."
       },
       {
         "speaker": "B",
-        "text": "我要一个北京烤鸭。",
-        "reading": "wǒ yào yī gè Běijīng kǎoyā.",
-        "ko": "베이징 덕 하나 주세요.",
-        "pronun": "워 야오 이 거 베이징 카오야."
+        "text": "それは魅力的ですね。いつかご一緒させていただけると嬉しいです。",
+        "reading": "それはみりょくてきですね。いつかごいっしょさせていただけるとうれしいです。",
+        "ko": "매력적이네요. 언젠가 함께할 수 있다면 기쁠 것 같습니다.",
+        "pronun": "소레와 미료쿠테키데스네. 이츠카 고잇쇼 사세테 이타다케루토 우레시이데스."
+      }
+    ]
+  },
+  "zh_word_work": {
+    "type": "word",
+    "items": [
+      {
+        "word": "会议",
+        "reading": "huìyì",
+        "ko": "회의",
+        "pronun": "후이이",
+        "example": "今天的会议很重要。"
+      },
+      {
+        "word": "报告",
+        "reading": "bàogào",
+        "ko": "보고",
+        "pronun": "빠오까오",
+        "example": "请提交你的报告。"
+      },
+      {
+        "word": "反馈",
+        "reading": "fǎnkuì",
+        "ko": "피드백",
+        "pronun": "판쿠이",
+        "example": "我需要你的反馈。"
+      },
+      {
+        "word": "讨论",
+        "reading": "tǎolùn",
+        "ko": "토론",
+        "pronun": "타오룬",
+        "example": "我们来讨论一下这个问题。"
+      },
+      {
+        "word": "演示",
+        "reading": "yǎnshì",
+        "ko": "시연, 발표",
+        "pronun": "옌스",
+        "example": "他正在做一个产品演示。"
+      },
+      {
+        "word": "议程",
+        "reading": "yìchéng",
+        "ko": "의제",
+        "pronun": "이청",
+        "example": "会议议程是什么？"
+      },
+      {
+        "word": "总结",
+        "reading": "zǒngjié",
+        "ko": "요약, 결론",
+        "pronun": "쫑지에",
+        "example": "请你来总结一下。"
+      },
+      {
+        "word": "提案",
+        "reading": "tián'àn",
+        "ko": "제안",
+        "pronun": "티엔안",
+        "example": "我有一个新的提案。"
+      }
+    ]
+  },
+  "zh_beginner_daily": {
+    "type": "script",
+    "lines": [
+      {
+        "speaker": "A",
+        "text": "早上好！",
+        "reading": "zǎoshang hǎo!",
+        "ko": "좋은 아침이에요!",
+        "pronun": "짜오샹 하오!"
+      },
+      {
+        "speaker": "B",
+        "text": "早上好！今天天气很好。",
+        "reading": "zǎoshang hǎo! jīntiān tiānqì hěn hǎo.",
+        "ko": "좋은 아침이에요! 오늘 날씨가 아주 좋아요.",
+        "pronun": "짜오샹 하오! 진티엔 티엔치 헌 하오."
       },
       {
         "speaker": "A",
-        "text": "好的。请稍等。",
-        "reading": "hǎo de. qǐng shāo děng.",
-        "ko": "네. 잠시만 기다려 주세요.",
-        "pronun": "하오 더. 칭 샤오 덩."
+        "text": "是啊，阳光明媚。",
+        "reading": "shì a, yángguāng míngmèi.",
+        "ko": "네, 햇살이 밝아요.",
+        "pronun": "쉬 아, 양광 밍메이."
+      },
+      {
+        "speaker": "B",
+        "text": "我们要去咖啡馆吗？",
+        "reading": "wǒmen yào qù kāfēiguǎn ma?",
+        "ko": "우리 카페에 갈까요?",
+        "pronun": "워먼 야오 취 카오페이관 마?"
+      },
+      {
+        "speaker": "A",
+        "text": "好主意！我喝咖啡。",
+        "reading": "hǎo zhǔyi! wǒ hē kāfēi.",
+        "ko": "좋은 생각이에요! 저는 커피를 마실게요.",
+        "pronun": "하오 주이! 워 허 카오페이."
+      },
+      {
+        "speaker": "B",
+        "text": "我喝茶。",
+        "reading": "wǒ hē chá.",
+        "ko": "저는 차를 마실게요.",
+        "pronun": "워 허 차."
+      },
+      {
+        "speaker": "A",
+        "text": "我们什么时候出发？",
+        "reading": "wǒmen shénme shíhou chūfā?",
+        "ko": "우리 언제 출발할까요?",
+        "pronun": "워먼 선머 스허우 추파?"
+      },
+      {
+        "speaker": "B",
+        "text": "现在就去吧。",
+        "reading": "xiànzài jiù qù ba.",
+        "ko": "지금 바로 가요.",
+        "pronun": "시엔짜이 지우 취 바."
       }
     ]
   },
@@ -1615,495 +1458,259 @@
     "lines": [
       {
         "speaker": "A",
-        "text": "大家好。",
-        "reading": "dà jiā hǎo.",
-        "ko": "안녕하세요.",
-        "pronun": "따 지아 하오"
+        "text": "会议什么时候开始？",
+        "reading": "Huìyì shénme shíhòu kāishǐ?",
+        "ko": "회의는 언제 시작하나요?",
+        "pronun": "훼이이 션머 스허우 카이시?"
       },
       {
         "speaker": "B",
-        "text": "你好，A。",
-        "reading": "nǐ hǎo, A.",
-        "ko": "안녕하세요, A.",
-        "pronun": "니 하오, A"
+        "text": "下午两点开始。",
+        "reading": "Xiàwǔ liǎng diǎn kāishǐ.",
+        "ko": "오후 2시에 시작합니다.",
+        "pronun": "시아우 량 디엔 카이시."
       },
       {
         "speaker": "A",
-        "text": "今天开会。",
-        "reading": "jīn tiān kāi huì.",
-        "ko": "오늘 회의해요.",
-        "pronun": "진 티엔 카이 후이"
+        "text": "好的，我准备好了。",
+        "reading": "Hǎo de, wǒ zhǔnbèi hǎo le.",
+        "ko": "네, 준비 다 했습니다.",
+        "pronun": "하오 더, 워 줜뻬이 하오 러."
       },
       {
         "speaker": "B",
-        "text": "好的，我知道了。",
-        "reading": "hǎo de, wǒ zhī dào le.",
-        "ko": "네, 알겠습니다.",
-        "pronun": "하오 더, 워 즈 다오 러"
+        "text": "请给我一些反馈。",
+        "reading": "Qǐng gěi wǒ yīxiē fǎnkuì.",
+        "ko": "피드백 좀 주세요.",
+        "pronun": "칭 게이 워 이시에 판쿠이."
       },
       {
         "speaker": "A",
-        "text": "这是我的报告。",
-        "reading": "zhè shì wǒ de bào gào.",
-        "ko": "이것은 제 보고서입니다.",
-        "pronun": "저 쓰 워 더 빠오 가오"
+        "text": "你的报告很清楚。",
+        "reading": "Nǐ de bàogào hěn qīngchǔ.",
+        "ko": "보고서가 아주 명확해요.",
+        "pronun": "니 더 바오가오 헌 칭추."
       },
       {
         "speaker": "B",
-        "text": "谢谢。请说。",
-        "reading": "xiè xie. qǐng shuō.",
-        "ko": "감사합니다. 말씀하세요.",
-        "pronun": "시에 시에. 칭 슈오"
+        "text": "谢谢！",
+        "reading": "Xièxie!",
+        "ko": "감사합니다!",
+        "pronun": "시에시에!"
       },
       {
         "speaker": "A",
-        "text": "你做得很好。",
-        "reading": "nǐ zuò de hěn hǎo.",
-        "ko": "당신은 정말 잘했어요.",
-        "pronun": "니 쭈오 더 헌 하오"
+        "text": "下次可以做得更好。",
+        "reading": "Xià cì kěyǐ zuò de gèng hǎo.",
+        "ko": "다음번엔 더 잘 할 수 있어요.",
+        "pronun": "시아 츠 커이 쭈오 더 껑 하오."
       },
       {
         "speaker": "B",
-        "text": "谢谢你的反馈。",
-        "reading": "xiè xie nǐ de fǎn kuì.",
-        "ko": "피드백 감사합니다.",
-        "pronun": "시에 시에 니 더 판 쿠이"
+        "text": "我明白了。",
+        "reading": "Wǒ míngbái le.",
+        "ko": "알겠습니다.",
+        "pronun": "워 밍바이 러."
       },
       {
         "speaker": "A",
-        "text": "明天见。",
-        "reading": "míng tiān jiàn.",
-        "ko": "내일 봐요.",
-        "pronun": "밍 티엔 지엔"
+        "text": "报告时间到了。",
+        "reading": "Bàogào shíjiān dào le.",
+        "ko": "발표할 시간이 됐어요.",
+        "pronun": "바오가오 스지엔 다오 러."
       },
       {
         "speaker": "B",
-        "text": "明天见。",
-        "reading": "míng tiān jiàn.",
-        "ko": "내일 봐요.",
-        "pronun": "밍 티엔 지엔"
+        "text": "我准备去。",
+        "reading": "Wǒ zhǔnbèi qù.",
+        "ko": "가서 준비할게요.",
+        "pronun": "워 줜뻬이 취."
       }
     ]
   },
-  "es_word_daily": {
+  "zh_daily_travel": {
+    "type": "script",
+    "lines": [
+      {
+        "speaker": "A",
+        "text": "您好，请问有没有预订？",
+        "reading": "Nín hǎo, qǐngwèn yǒu méiyǒu yùdìng?",
+        "ko": "안녕하세요, 예약하셨나요?",
+        "pronun": "닌 하오, 친원 요 메이요 위딩?"
+      },
+      {
+        "speaker": "B",
+        "text": "你好，我叫李明。我订了一个单人房。",
+        "reading": "Nǐ hǎo, wǒ jiào Lǐ Míng. Wǒ dìng le yīgè dānrén fáng.",
+        "ko": "안녕하세요, 제 이름은 이명입니다. 저는 1인실을 예약했습니다.",
+        "pronun": "니 하오, 워 지아오 리밍. 워 딩 러 이꺼 단런 팡."
+      },
+      {
+        "speaker": "A",
+        "text": "好的，李先生，您的房间在三楼，305号。",
+        "reading": "Hǎo de, Lǐ xiānshēng, nín de fángjiān zài sān lóu, sān líng wǔ hào.",
+        "ko": "네, 이 선생님, 방은 3층 305호입니다.",
+        "pronun": "하오 더, 리 시엔셩, 닌 더 팡지엔 짜이 산 로우, 산 링 우 하오."
+      },
+      {
+        "speaker": "B",
+        "text": "谢谢。请问，去市中心怎么走？",
+        "reading": "Xièxie. Qǐngwèn, qù shìzhōngxīn zěnme zǒu?",
+        "ko": "감사합니다. 시내 중심가로 어떻게 가나요?",
+        "pronun": "셰셰. 친원, 취 스중신 젠머 조우?"
+      },
+      {
+        "speaker": "A",
+        "text": "您可以坐地铁。到站台后，往右边走，看到便利店就到了。",
+        "reading": "Nín kěyǐ zuò dìtiě. Dào zhàntái hòu, wǎng yòubiān zǒu, kàn dào biànlìdiàn jiù dào le.",
+        "ko": "지하철을 타시면 됩니다. 역에 도착해서 오른쪽으로 가시면 편의점이 보일 겁니다.",
+        "pronun": "닌 커이 주오 디에. 다오 잔타이 호우, 왕 요비엔 조우, 칸 다오 비엔리디엔 지우 다오 러."
+      },
+      {
+        "speaker": "B",
+        "text": "好的，明白了。另外，我想点一份炒饭，辣一点的。",
+        "reading": "Hǎo de, míngbái le. Lìngwài, wǒ xiǎng diǎn yī fèn chǎofàn, là yīdiǎn de.",
+        "ko": "네, 알겠습니다. 그리고 볶음밥 하나 주문하고 싶은데, 좀 맵게 해주세요.",
+        "pronun": "하오 더, 밍바이 러. 링와이, 워 시앙 디엔 이 펀 차오판, 라 이디엔 더."
+      },
+      {
+        "speaker": "A",
+        "text": "没问题，您还有什么别的需要吗？",
+        "reading": "Méi wèntí, nín hái yǒu shénme bié de xūyào ma?",
+        "ko": "문제없습니다. 다른 필요하신 것은 없으신가요?",
+        "pronun": "메이웬티, 닌 하이 요 션머 비에 더 쉬야오 마?"
+      },
+      {
+        "speaker": "B",
+        "text": "没有了，谢谢您的帮助！",
+        "reading": "Méiyǒu le, xièxie nín de bāngzhù!",
+        "ko": "없습니다. 도움 주셔서 감사합니다!",
+        "pronun": "메이요우 러, 셰셰 닌 더 빵주!"
+      }
+    ]
+  },
+  "es_daily_work": {
+    "error": "Expecting value: line 13 column 15 (char 264)"
+  },
+  "es_business_work": {
+    "type": "script",
+    "lines": [
+      {
+        "speaker": "A",
+        "text": "Buenos días, María. ¿Estuviste en la reunión de esta mañana?",
+        "reading": "",
+        "ko": "부에노스 디아스, 마리아. 에스투비스테 엔 라 레우니온 데 에스타 마냐나?",
+        "pronun": "부에노스 디아스, 마리아. 에스투비스테 엔 라 레우니온 데 에스타 마냐나?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sí, Juan. Estuve presente. ¿Hubo algún punto importante que deba conocer?",
+        "reading": "",
+        "ko": "시, 후안. 에스투베 프레센테. 우보 알군 punto 임포르탄테 케 데바 코노세르?",
+        "pronun": "시, 후안. 에스투베 프레센테. 우보 알군 punto 임포르탄테 케 데바 코노세르?"
+      },
+      {
+        "speaker": "A",
+        "text": "Se discutió el nuevo plan de marketing y se solicitó feedback de todos los departamentos.",
+        "reading": "",
+        "ko": "세 디스쿠티오 엘 누에보 플란 데 마르케팅 이 세 솔리시토 feedback 데 토도스 로스 데파르타멘토스.",
+        "pronun": "세 디스쿠티오 엘 누에보 플란 데 마르케팅 이 세 솔리시토 feedback 데 토도스 로스 데파르타멘토스."
+      },
+      {
+        "speaker": "B",
+        "text": "Entendido. ¿Y sobre la presentación de los resultados trimestrales?",
+        "reading": "",
+        "ko": "엔텐디도. 이 소브레 라 프레센타시온 데 로스 레술타도스 트리메스트랄레스?",
+        "pronun": "엔텐디도. 이 소브레 라 프레센타시온 데 로스 레술타도스 트리메스트랄레스?"
+      },
+      {
+        "speaker": "A",
+        "text": "Se pospuso para la próxima semana. El equipo de desarrollo necesita más tiempo.",
+        "reading": "",
+        "ko": "세 포스푸소 파라 라 프로시마 세마나. 엘 에퀴포 데 데사롤로 네세시타 마스 티엠포.",
+        "pronun": "세 포스푸소 파라 라 프로시마 세마나. 엘 에퀴포 데 데사롤로 네세시타 마스 티엠포."
+      },
+      {
+        "speaker": "B",
+        "text": "De acuerdo. Me gustaría ofrecer mi apoyo en lo que sea necesario.",
+        "reading": "",
+        "ko": "데 아쿠에르도. 메 구스타리아 오프레세르 미 아포요 엔 로 케 세아 네세사리오.",
+        "pronun": "데 아쿠에르도. 메 구스타리아 오프레세르 미 아포요 엔 로 케 세아 네세사리오."
+      },
+      {
+        "speaker": "A",
+        "text": "Agradezco tu disposición. Te mantendré informado.",
+        "reading": "",
+        "ko": "아그라데스코 투 디스포시시온. 테 만텐드레 인포르마도.",
+        "pronun": "아그라데스코 투 디스포시시온. 테 만텐드레 인포르마도."
+      },
+      {
+        "speaker": "B",
+        "text": "Perfecto. Si necesitas alguna aclaración, no dudes en consultarme.",
+        "reading": "",
+        "ko": "페르펙토. 시 네세시타스 알구나 아클라라시온, 노 두데스 엔 콘술타르메.",
+        "pronun": "페르펙토. 시 네세시타스 알구나 아클라라시온, 노 두데스 엔 콘술타르메."
+      }
+    ]
+  },
+  "fr_word_work": {
     "type": "word",
     "items": [
       {
-        "word": "despertarse",
+        "word": "réunion",
         "reading": "",
-        "ko": "일어나다",
-        "pronun": "데스뻬르따르세",
-        "example": "Me despierto a las siete."
+        "ko": "회의",
+        "pronun": "헤위옹",
+        "example": "La réunion commence à 9h."
       },
       {
-        "word": "ducha",
+        "word": "ordre du jour",
         "reading": "",
-        "ko": "샤워",
-        "pronun": "두차",
-        "example": "Tomé una ducha caliente."
+        "ko": "의제",
+        "pronun": "오흐드흐 뒤 조흐",
+        "example": "Quel est l'ordre du jour aujourd'hui ?"
       },
       {
-        "word": "café",
+        "word": "présentation",
         "reading": "",
-        "ko": "커피",
-        "pronun": "까페",
-        "example": "Quiero un café por la mañana."
+        "ko": "발표",
+        "pronun": "프레장타시옹",
+        "example": "J'ai une présentation à faire demain."
       },
       {
-        "word": "desayuno",
+        "word": "compte rendu",
         "reading": "",
-        "ko": "아침 식사",
-        "pronun": "데사이우노",
-        "example": "El desayuno está listo."
+        "ko": "회의록",
+        "pronun": "꽁뜨 랑뒤",
+        "example": "Envoyez-moi le compte rendu plus tard."
       },
       {
-        "word": "trabajo",
+        "word": "retour",
         "reading": "",
-        "ko": "일, 직장",
-        "pronun": "뜨라바호",
-        "example": "Voy al trabajo."
+        "ko": "피드백, 회신",
+        "pronun": "흐투흐",
+        "example": "J'attends votre retour sur ce projet."
       },
       {
-        "word": "sol",
+        "word": "proposition",
         "reading": "",
-        "ko": "태양, 햇빛",
-        "pronun": "솔",
-        "example": "Hace mucho sol hoy."
+        "ko": "제안",
+        "pronun": "프호포지시옹",
+        "example": "Nous avons une proposition à vous faire."
       },
       {
-        "word": "lluvia",
+        "word": "débat",
         "reading": "",
-        "ko": "비",
-        "pronun": "이우비아",
-        "example": "Está lloviendo mucho."
+        "ko": "토론",
+        "pronun": "데바",
+        "example": "Le débat était très animé."
       },
       {
-        "word": "tiempo",
+        "word": "discussion",
         "reading": "",
-        "ko": "날씨",
-        "pronun": "띠엠뽀",
-        "example": "¿Qué tiempo hace?"
-      }
-    ]
-  },
-  "es_beginner_daily": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "¡Hola! Buenos días.",
-        "reading": "¡Hola! Buenos días.",
-        "ko": "안녕하세요. 좋은 아침입니다.",
-        "pronun": "올라! 부에노스 디아스."
-      },
-      {
-        "speaker": "B",
-        "text": "Buenos días. ¿Cómo estás?",
-        "reading": "Buenos días. ¿Cómo estás?",
-        "ko": "좋은 아침입니다. 어떻게 지내세요?",
-        "pronun": "부에노스 디아스. 코모 에스따스?"
-      },
-      {
-        "speaker": "A",
-        "text": "Bien, gracias. ¿Y tú?",
-        "reading": "Bien, gracias. ¿Y tú?",
-        "ko": "잘 지내요, 감사합니다. 당신은요?",
-        "pronun": "비엔, 그라시아스. 이 뚜?"
-      },
-      {
-        "speaker": "B",
-        "text": "Muy bien. ¿Qué hora es?",
-        "reading": "Muy bien. ¿Qué hora es?",
-        "ko": "아주 좋아요. 몇 시인가요?",
-        "pronun": "무이 비엔. 케 오라 에스?"
-      },
-      {
-        "speaker": "A",
-        "text": "Son las ocho y media.",
-        "reading": "Son las ocho y media.",
-        "ko": "8시 반입니다.",
-        "pronun": "손 라스 오초 이 메디아."
-      },
-      {
-        "speaker": "B",
-        "text": "Ah, es hora de ir al café.",
-        "reading": "Ah, es hora de ir al café.",
-        "ko": "아, 카페에 갈 시간이네요.",
-        "pronun": "아, 에스 오라 데 이르 알 카페."
-      },
-      {
-        "speaker": "A",
-        "text": "Sí, ¡vamos! ¿Cómo está el tiempo?",
-        "reading": "Sí, ¡vamos! ¿Cómo está el tiempo?",
-        "ko": "네, 갑시다! 날씨는 어떤가요?",
-        "pronun": "시, 바모스! 코모 에스따 엘 티엠포?"
-      },
-      {
-        "speaker": "B",
-        "text": "Hace sol. Es un día bonito.",
-        "reading": "Hace sol. Es un día bonito.",
-        "ko": "해가 쨍쨍해요. 좋은 날씨네요.",
-        "pronun": "아세 솔. 에스 운 디아 보니토."
-      }
-    ]
-  },
-  "es_daily_travel": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "¡Hola! ¿Tienes mi reserva de hotel a nombre de Kim?",
-        "reading": "",
-        "ko": "안녕하세요? 제 이름으로 된 호텔 예약이 있나요? 김이라고 합니다.",
-        "pronun": "올라! 티에네스 미 레세르바 데 오텔 아 놈브레 데 킴?"
-      },
-      {
-        "speaker": "B",
-        "text": "Sí, señora Kim. Aquí tiene su llave. Es la habitación 305.",
-        "reading": "",
-        "ko": "네, 김 선생님. 여기 열쇠입니다. 305호입니다.",
-        "pronun": "시, 세뇨라 킴. 아키 티에네 수 야베. 에스 라 아비타시온 트레스-시엔토스 싱코."
-      },
-      {
-        "speaker": "A",
-        "text": "Gracias. ¿Está muy lejos el ascensor?",
-        "reading": "",
-        "ko": "감사합니다. 엘리베이터가 멀리 있나요?",
-        "pronun": "그라시아스. 에스타 무이 레호스 엘 아센소르?"
-      },
-      {
-        "speaker": "B",
-        "text": "No, está justo al final del pasillo a la derecha.",
-        "reading": "",
-        "ko": "아니요, 바로 복도 끝 오른쪽에 있습니다.",
-        "pronun": "노, 에스타 후스토 알 피날 델 파시요 알 라 데레차."
-      },
-      {
-        "speaker": "A",
-        "text": "Perfecto. Y disculpe, ¿cómo puedo llegar a la Plaza Mayor desde aquí?",
-        "reading": "",
-        "ko": "완벽하네요. 실례합니다만, 여기서 프라사 마요르까지 어떻게 갈 수 있나요?",
-        "pronun": "페르펙토. 이 디스쿨페, 코모 푸에도 예가르 아 라 플라사 마요르 데스데 아키?"
-      },
-      {
-        "speaker": "B",
-        "text": "Es fácil. Camine recto por esta calle hasta el semáforo, luego gire a la izquierda.",
-        "reading": "",
-        "ko": "쉬워요. 이 길로 직진해서 신호등까지 가신 다음, 왼쪽으로 도세요.",
-        "pronun": "에스 파실. 카미네 렉토 포르 에스타 칼예 아스타 엘 세마포로, 루에고 히레 아 라 이스키에르다."
-      },
-      {
-        "speaker": "A",
-        "text": "Entendido. Y para cenar, ¿alguna recomendación de restaurante cercano?",
-        "reading": "",
-        "ko": "알겠습니다. 저녁 식사는요, 근처에 추천할 만한 식당이 있나요?",
-        "pronun": "엔텐디도. 이 파라 세나르, 알구가 레코멘다시온 데 레스타우란테 세르카노?"
-      },
-      {
-        "speaker": "B",
-        "text": "Sí, hay un buen sitio de tapas a dos calles de aquí. Se llama 'El Rincón'.",
-        "reading": "",
-        "ko": "네, 여기서 두 블록 떨어진 곳에 타파스 맛집이 있어요. '엘 링콘'이라고 해요.",
-        "pronun": "시, 아이 운 부엔 시티오 데 타пас 아 도스 칼예스 데 아키. 세 야마 '엘 링콘'."
-      },
-      {
-        "speaker": "A",
-        "text": "¡Genial! Muchas gracias por su ayuda.",
-        "reading": "",
-        "ko": "훌륭하네요! 도와주셔서 정말 감사합니다.",
-        "pronun": "헤니알! 무차스 그라시아스 포르 수 아유다."
-      },
-      {
-        "speaker": "B",
-        "text": "De nada, señora. ¡Que tenga una buena estancia!",
-        "reading": "",
-        "ko": "천만에요, 선생님. 좋은 여행 되세요!",
-        "pronun": "데 나다, 세뇨라. 케 텐가 우나 부에나 에스탄시아!"
-      }
-    ]
-  },
-  "es_daily_hobby": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "¡Hola! ¿Qué tal tu fin de semana?",
-        "reading": "",
-        "ko": "안녕! 주말 잘 보냈어?",
-        "pronun": "올라! 케 딸 투 핀 데 세마나?"
-      },
-      {
-        "speaker": "B",
-        "text": "Muy bien, gracias. Fui de excursión a la montaña.",
-        "reading": "",
-        "ko": "아주 좋았어, 고마워. 산으로 하이킹 갔어.",
-        "pronun": "무이 비엔, 그라시아스. 푸이 데 엑스쿠르시온 아 라 몬타냐."
-      },
-      {
-        "speaker": "A",
-        "text": "¡Qué bueno! A mí me encanta la naturaleza. ¿Te gusta el senderismo?",
-        "reading": "",
-        "ko": "정말 좋다! 나도 자연을 정말 좋아해. 등산 좋아해?",
-        "pronun": "케 부에노! 아 미 메 인깐따 라 나뚜랄레사. 테 구스타 엘 센데리스모?"
-      },
-      {
-        "speaker": "B",
-        "text": "Sí, me encanta. Y también disfruto mucho el ciclismo.",
-        "reading": "",
-        "ko": "응, 좋아해. 그리고 자전거 타는 것도 아주 즐겨.",
-        "pronun": "시, 메 인깐따. 이 탐비엔 디스프루토 무초 엘 시클리스모."
-      },
-      {
-        "speaker": "A",
-        "text": "¡Anda! ¿Sales a rodar a menudo?",
-        "reading": "",
-        "ko": "정말? 자주 타러 나가?",
-        "pronun": "안다! 살레스 아 로다르 아 메누도?"
-      },
-      {
-        "speaker": "B",
-        "text": "Intento salir al menos una vez por semana, sobre todo cuando hace buen tiempo.",
-        "reading": "",
-        "ko": "주에 최소 한 번은 나가려고 해, 특히 날씨 좋을 때.",
-        "pronun": "인텐토 살리르 알 메노스 우나 베스 포르 세마나, 소브레 토도 쿠안도 아세 부엔 티엠포."
-      },
-      {
-        "speaker": "A",
-        "text": "Eso es genial. Yo prefiero más las actividades de acampada.",
-        "reading": "",
-        "ko": "정말 대단하다. 나는 캠핑 활동을 더 선호해.",
-        "pronun": "에소 에스 헤니알. 요 프레피에로 마스 라스 악티비다데스 데 아캄파다."
-      },
-      {
-        "speaker": "B",
-        "text": "¿Acampada? ¡Eso suena muy relajante!",
-        "reading": "",
-        "ko": "캠핑? 그거 정말 편안하게 들린다!",
-        "pronun": "아캄파다? 에소 수에나 무이 렐라한테!"
-      },
-      {
-        "speaker": "A",
-        "text": "Sí, pasar la noche al aire libre, rodeado de naturaleza, es lo mejor.",
-        "reading": "",
-        "ko": "응, 야외에서 밤을 보내는 것, 자연에 둘러싸여 있는 것, 그게 최고야.",
-        "pronun": "시, 파사르 라 노체 알 아이레 리브레, 로데아도 데 나투랄레사, 에스 로 메호르."
-      },
-      {
-        "speaker": "B",
-        "text": "Tal vez deberíamos organizar algo juntos alguna vez.",
-        "reading": "",
-        "ko": "언젠가 함께 뭘 좀 조직해야겠네.",
-        "pronun": "탈 베스 데베리아모스 오르가니사르 알로 훈토스 알구나 베스."
-      }
-    ]
-  },
-  "es_business_travel": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "Buenos días, tengo una reserva a nombre de Kim Min-jun.",
-        "reading": "",
-        "ko": "안녕하세요, 김민준이라는 이름으로 예약이 되어 있습니다.",
-        "pronun": "부에노스 디아스, 땡고 우나 레세르바 아 놈브레 데 킴 민준."
-      },
-      {
-        "speaker": "B",
-        "text": "Sí, señor Kim. Su habitación está lista. Es la 305, en el tercer piso.",
-        "reading": "",
-        "ko": "네, 김 선생님. 객실 준비되었습니다. 305호, 3층입니다.",
-        "pronun": "시, 세뇨르 킴. 수 아비타시온 에스따 리스타. 에스 라 트레스  سين꼬, 엔 엘 테르세르 피소."
-      },
-      {
-        "speaker": "A",
-        "text": "Muchas gracias. ¿Podría indicarme dónde está el ascensor?",
-        "reading": "",
-        "ko": "대단히 감사합니다. 엘리베이터가 어디 있는지 알려주시겠어요?",
-        "pronun": "무차스 그라시아스. 뽀드리야 인디카르메 돈데 에스따 엘 아센소르?"
-      },
-      {
-        "speaker": "B",
-        "text": "Por supuesto. Siga todo recto y gire a la izquierda.",
-        "reading": "",
-        "ko": "물론입니다. 직진하시다가 왼쪽으로 도세요.",
-        "pronun": "뽀르 수에스또. 시가 토도 렉또 이 히레 아 라 이스끼에르다."
-      },
-      {
-        "speaker": "A",
-        "text": "Perfecto. ¿Y para ir al aeropuerto mañana por la mañana?",
-        "reading": "",
-        "ko": "알겠습니다. 내일 아침 공항에는 어떻게 가야 하나요?",
-        "pronun": "페르펙또. 이 파라 이르 알 아에로뿌에르또 마냐나 뽀르 라 마냐나?"
-      },
-      {
-        "speaker": "B",
-        "text": "Hay un autobús directo desde la estación central a las 8 AM.",
-        "reading": "",
-        "ko": "중앙역에서 오전 8시에 출발하는 직행 버스가 있습니다.",
-        "pronun": "아이 운 아우또부스 디렉또 데스데 라 에스따시온 센트랄 아 라스 오초 아엠."
-      },
-      {
-        "speaker": "A",
-        "text": "Estupendo. ¿Me podría recomendar un restaurante cercano para cenar esta noche?",
-        "reading": "",
-        "ko": "훌륭하네요. 오늘 밤 저녁 식사를 할 만한 근처 레스토랑을 추천해주시겠어요?",
-        "pronun": "에스뚜뻰도. 메 뽀드리야 레꼬멘다르 운 레스따우란테 세르카노 파라 센나르 에스따 노체?"
-      },
-      {
-        "speaker": "B",
-        "text": "Claro, 'El Sabor de España' es muy popular. Está a cinco minutos andando.",
-        "reading": "",
-        "ko": "물론입니다, '엘 사보르 데 에스빠냐'가 매우 인기가 많습니다. 걸어서 5분 거리에 있습니다.",
-        "pronun": "클라로, 엘 사보르 데 에스빠냐 에스 무이 뽀뿔라르. 에스따 아 씽꼬 미누또스 안단도."
-      },
-      {
-        "speaker": "A",
-        "text": "Excelente. Muchas gracias por su ayuda.",
-        "reading": "",
-        "ko": "훌륭합니다. 도와주셔서 정말 감사합니다.",
-        "pronun": "엑셀렌테. 무차스 그라시아스 뽀르 수 아유다."
-      },
-      {
-        "speaker": "B",
-        "text": "De nada, señor Kim. Disfrute su estancia.",
-        "reading": "",
-        "ko": "천만에요, 김 선생님. 즐거운 시간 보내세요.",
-        "pronun": "데 나다, 세뇨르 킴. 디스프루테 수 에스딴시아."
-      }
-    ]
-  },
-  "de_beginner_hobby": {
-    "type": "script",
-    "lines": [
-      {
-        "speaker": "A",
-        "text": "Hallo! Was machst du gerne in deiner Freizeit?",
-        "reading": "",
-        "ko": "안녕하세요! 여가 시간에 무엇을 하는 것을 좋아하세요?",
-        "pronun": "할로! 바스 마흐스트 두 게르네 인 다이너 프라이차이트?"
-      },
-      {
-        "speaker": "B",
-        "text": "Hallo! Ich fahre gerne Fahrrad.",
-        "reading": "",
-        "ko": "안녕하세요! 저는 자전거 타는 것을 좋아해요.",
-        "pronun": "할로! 이히 파레 게르네 파라트."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, das ist toll! Wo fährst du Fahrrad?",
-        "reading": "",
-        "ko": "오, 멋지네요! 어디에서 자전거를 타세요?",
-        "pronun": "오, 다스 이스트 톨! 보 페어스트 두 파라트?"
-      },
-      {
-        "speaker": "B",
-        "text": "Ich fahre oft im Park oder am Fluss.",
-        "reading": "",
-        "ko": "저는 종종 공원이나 강가에서 타요.",
-        "pronun": "이히 파레 오프트 임 파크 오더 암 플루스."
-      },
-      {
-        "speaker": "A",
-        "text": "Das klingt schön. Ich gehe gerne campen.",
-        "reading": "",
-        "ko": "듣기 좋네요. 저는 캠핑 가는 것을 좋아해요.",
-        "pronun": "다스 클링트 쇤. 이히 게헤 게르네 캠펜."
-      },
-      {
-        "speaker": "B",
-        "text": "Campen? Das ist auch sehr schön!",
-        "reading": "",
-        "ko": "캠핑이요? 그것도 아주 좋아요!",
-        "pronun": "캠펜? 다스 이스트 아우흐 제어 쇤!"
-      },
-      {
-        "speaker": "A",
-        "text": "Ja, ich liebe die Natur.",
-        "reading": "",
-        "ko": "네, 저는 자연을 사랑해요.",
-        "pronun": "야, 이히 리베 디 나투어."
-      },
-      {
-        "speaker": "B",
-        "text": "Was machst du noch gerne draußen?",
-        "reading": "",
-        "ko": "밖에서 또 무엇 하는 것을 좋아하세요?",
-        "pronun": "바스 마흐스트 두 노흐 게르네 드라우스엔?"
-      },
-      {
-        "speaker": "A",
-        "text": "Ich wandere gerne in den Bergen.",
-        "reading": "",
-        "ko": "저는 산에서 하이킹하는 것을 좋아해요.",
-        "pronun": "이히 반데레 게르네 인 덴 베어겐."
-      },
-      {
-        "speaker": "B",
-        "text": "Das sind tolle Hobbys!",
-        "reading": "",
-        "ko": "정말 멋진 취미들이네요!",
-        "pronun": "다스 진트 톨레 호비스!"
+        "ko": "논의",
+        "pronun": "디스퀴시옹",
+        "example": "Une discussion est nécessaire."
       }
     ]
   }
